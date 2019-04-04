@@ -8,12 +8,12 @@
   </head>
   <header class="page-header">
     <div class="page-header__inner">
-      <a href="index.html" aria-label="Перейти на главную страницу">
+      <a class="page-header__logo-link" href="index.html" aria-label="Перейти на главную страницу">
         <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Кэт энерджи">
       </a>
     </div>
-    <button type="button" class="main-nav__toggle" aria-label="Открыть меню"></button>
     <nav class="main-nav">
+      <button type="button" class="main-nav__toggle" aria-label="Открыть меню"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
@@ -30,7 +30,7 @@
   <main class="page-main">
     <h1 class="page-main__title">Подбор программы</h1>
     <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-    <form class="page-main__form" method="post" action="https://echo.htmlacademy.ru">
+    <form class="form" method="post" action="https://echo.htmlacademy.ru">
     <fieldset class="form__block form__block--cat">
     <legend class="visually-hidden">Данные участника</legend>
       <label for="cat-name" class="form__text-label">Имя:*</label>
@@ -58,7 +58,7 @@
     </fieldset>
     <fieldset class="form__block form__block--comment">
     <legend class="form__block__title">Комментарий</legend>
-      <textarea class="form__textarea" name="cat-habits" placeholder="Расскажите о всех повадках кота"></textarea>
+      <textarea class="form__textarea" name="cat-habits" placeholder="Расскажите обо всех повадках кота"></textarea>
     </fieldset>
     <fieldset class="form__block form__block--addition">
     <legend class="form__title">Дополнительно</legend>
@@ -73,34 +73,34 @@
     </fieldset>
     <button class="form__btn-submit btn" type="submit">Отправить заявку</button>
     <small class="form__legend">*-Обязательные поля</small>
-  </form>
-  <div class="contacts">
-    <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-    <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 </p>
-    <span>Санкт-Петербург</span>
-    <div class="contacts__map" aria-label="Расположение организации Cat Energy на карте">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1553350954270" style="border:0" allowfullscreen></iframe>
-    </div>
-  </div>
+    </form>
   </main>
   <footer class="page-footer">
+    <section class="page-footer__contacts">
+      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <span>Санкт-Петербург</span>
+      <div class="contacts__map" aria-label="Расположение организации Cat Energy на карте">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1553350954270" allowfullscreen=""></iframe>
+      </div>
+    </section>
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Логотип Cat Energy">
       </a>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link socials__link--vk" href="#" aria-label="instagram">
+          <a class="social__link socials__link--vk" href="#" aria-label="vkontakte">
             <svg class="social__icon" width="22" height="12"></svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link socials__link--insta" href="#" aria-label="facebook">
+          <a class="social__link socials__link--insta" href="#" aria-label="instagram">
             <svg class="social__icon" width="16" height="16"></svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link socials__link--fb" href="#" aria-label="twitter">
+          <a class="social__link socials__link--fb" href="#" aria-label="facebook">
             <svg class="social__icon" width="10" height="19"></svg>
           </a>
         </li>
