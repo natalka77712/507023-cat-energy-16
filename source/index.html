@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
   <header class="page-header">
     <div class="page-header__inner">
       <a class="page-header__logo-link">
@@ -33,7 +34,7 @@
       <h1 class="main-block__title">Функциональное питание для котов</h1>
       <p class="main-block__description">Занялся собой? Займись котом!</p>
       <img class="main-block__image" src="http://placehold.it/280x270" alt="Изображение продукции" width="280" height="270">
-      <a class="main-block__link" href="form.html">Подобрать программу</a>
+      <a class="main-block__btn btn" href="form.html">Подобрать программу</a>
     </section>
 
     <section class="programs">
@@ -84,17 +85,19 @@
 
   <footer class="page-footer">
     <section class="page-footer__contacts">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+      <div class="contacts container">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+      </div>
       <div class="contacts__map" aria-label="Расположение организации Cat Energy на карте">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1553350954270" allowfullscreen=""></iframe>
       </div>
     </section>
-    <div class="page-footer__wrapper container">
+    <div class="page-footer__wrapper">
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Логотип Cat Energy">
       </a>
-      <ul class="social__list">
+      <ul class="page-footer__social">
         <li class="social__item">
           <a class="social__link socials__link--vk" href="#" aria-label="vkontakte">
             <svg class="social__icon" width="22" height="12"></svg>
@@ -118,4 +121,5 @@
       </p>
     </div>
   </footer>
-
+</body>
+</html>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
   <header class="page-header">
     <div class="page-header__inner">
       <a class="page-header__logo-link" href="index.html" aria-label="Перейти на главную страницу">
@@ -29,7 +30,7 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Подбор программы</h1>
+    <h1 class="page-main__title page-main__title--request">Подбор программы</h1>
     <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="form" method="post" action="https://echo.htmlacademy.ru">
     <fieldset class="form__block form__block--cat">
@@ -51,18 +52,18 @@
       <label class="form__radio-label" for="advice" tabindex="0">Не знаю (нужен ваш совет)</label>
     </fieldset>
     <fieldset class="form__block form__block--owner">
-    <legend class="form__title">Контактные данные (владельца кота)</legend>
+    <legend class="form__block-title">Контактные данные (владельца кота)</legend>
       <label for="email" class="form__text-label">E-mail:*</label>
       <input type="email" class="form__text-input" id="email" name="email-owner" placeholder="kuklachev@gmail.com" required>
       <label for="phone" class="form__text-label">Телефон:*</label>
       <input class="form__text-input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required="">
     </fieldset>
     <fieldset class="form__block form__block--comment">
-    <legend class="form__block__title">Комментарий</legend>
+    <legend class="form__block-title">Комментарий</legend>
       <textarea class="form__textarea" name="cat-habits" placeholder="Расскажите обо всех повадках кота"></textarea>
     </fieldset>
     <fieldset class="form__block form__block--addition">
-    <legend class="form__title">Дополнительно</legend>
+    <legend class="form__block-title">Дополнительно</legend>
       <input class="form__checkbox visually-hidden" type="checkbox" id="sweetener" checked="">
       <label class="form__checkbox-label" for="sweetener">Сахарозаменитель</label>
       <input class="form__checkbox visually-hidden" type="checkbox" id="water">
@@ -79,17 +80,19 @@
 
   <footer class="page-footer">
     <section class="page-footer__contacts">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+      <div class="contacts contats--inner container">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+      </div>
       <div class="contacts__map" aria-label="Расположение организации Cat Energy на карте">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1553350954270" allowfullscreen=""></iframe>
       </div>
     </section>
-    <div class="page-footer__wrapper container">
+    <div class="page-footer__wrapper">
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Логотип Cat Energy">
       </a>
-      <ul class="social__list">
+      <ul class="page-footer__social">
         <li class="social__item">
           <a class="social__link socials__link--vk" href="#" aria-label="vkontakte">
             <svg class="social__icon" width="22" height="12"></svg>
@@ -113,3 +116,5 @@
       </p>
     </div>
   </footer>
+</body>
+</html>
