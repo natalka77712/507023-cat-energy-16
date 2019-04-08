@@ -1,13 +1,17 @@
 .page-main {
   padding-top: 22px;
+  border-top: 1px solid $grey-silver;
+}
+
+.page-main--form {
   padding-left: 20px;
   padding-right: 20px;
-  border-top: 1px solid $grey-silver;
 }
 
 .page-main__title {
   margin: 0;
   padding-bottom: 22px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
@@ -21,5 +25,6 @@
 
 .page-main__description {
   margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
 }

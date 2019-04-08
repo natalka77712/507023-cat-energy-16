@@ -8,6 +8,7 @@
 .additional-ingredient__title {
   margin: 0;
   margin-bottom: 32px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -31,6 +32,7 @@
 .additional-ingredient__sub {
   margin: 0;
   margin-bottom: 14px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -38,10 +40,9 @@
 }
 
 .additional-ingredient__volume,
-.additional-ingredien__price {
+.additional-ingredient__price {
   margin: 0;
   line-height: 14px;
-  font-family: "Arial", "Tahoma", sans-serif;
   color: $grey-dark;
 }
 
@@ -63,6 +64,5 @@
   margin: 0;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Arial", "Tahoma", sans-serif;
   color: $white;
 }

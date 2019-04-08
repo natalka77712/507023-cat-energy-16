@@ -1,5 +1,5 @@
 .main-nav {
-  color: $black;
+  color: $colorBaseText;
   background-color: $white;
 }
 
@@ -11,11 +11,12 @@
 .main-nav__link {
   display: block;
   padding: 23px 0;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
-  color: $black;
+  color: $colorBaseText;
   border-top: 1px solid $grey-silver;
 }
