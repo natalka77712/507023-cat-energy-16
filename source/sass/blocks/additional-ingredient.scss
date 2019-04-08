@@ -1,0 +1,68 @@
+.additional-ingredient {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $white;
+}
+
+.additional-ingredient__title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.additional-ingredient__list {
+  @include reset-list;
+}
+
+.additional-ingredient__item {
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid $grey-silver;
+
+  &:first-child {
+    border-top: 1px solid $grey-silver;
+  }
+}
+
+.additional-ingredient__sub {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.additional-ingredient__volume,
+.additional-ingredien__price {
+  margin: 0;
+  line-height: 14px;
+  font-family: "Arial", "Tahoma", sans-serif;
+  color: $grey-dark;
+}
+
+.additional-ingredient__btn {
+  margin-top: 15px;
+}
+
+.additional-ingredient__action {
+  min-height: 289px;
+  margin-top: 39px;
+  margin-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: $white;
+  background: $green url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+}
+
+.additional-ingredient__offer {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial", "Tahoma", sans-serif;
+  color: $white;
+}

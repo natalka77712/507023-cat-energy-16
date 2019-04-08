@@ -1,0 +1,22 @@
+.more-goods__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.more-goods__promo {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial", "Tahoma", sans-serif;
+  color: $grey-dark;
+}
+
+.more-goods__btn {
+  width: 100%;
+  color: $grey-dark;
+  background-color: $grey;
+}
