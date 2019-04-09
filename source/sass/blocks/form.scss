@@ -5,16 +5,28 @@
 
 .form__block {
   border: none;
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-top: 27px;
 
-  &--cat,
+  &--cat {
+    padding-top: 27px;
+    padding-bottom: 23px;
+  }
+
   &--programm {
-    padding-bottom: 22px;
+    padding-top: 20px;
+    padding-bottom: 21px;
     border-bottom: 1px solid $grey-silver;
+    border-top: 1px solid $grey-silver;
+  }
+
+  &--owner {
+    margin-top: 32px;
+    margin-bottom: 35px;
+  }
+
+  &--comment {
+    padding-bottom: 31px;
   }
 }
 
@@ -22,19 +34,22 @@
   margin-bottom: 35px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
 }
 
 .form__text-input {
   padding: 12px;
   margin-bottom: 14px;
-  box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   color: $grey-dark;
   border: 1px solid $grey-silver;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__text-label,
@@ -61,7 +76,6 @@
   text-transform: uppercase;
   color: $grey-dark;
   border: 1px solid $grey-silver;
-  box-sizing: border-box;
 }
 
 .form__btn-submit {

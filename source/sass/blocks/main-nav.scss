@@ -1,6 +1,5 @@
 .main-nav {
-  color: $colorBaseText;
-  background-color: $white;
+  color: $color-base-text;
 }
 
 .main-nav__list {
@@ -17,6 +16,6 @@
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
-  color: $colorBaseText;
+  color: $color-base-text;
   border-top: 1px solid $grey-silver;
 }

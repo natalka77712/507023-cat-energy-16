@@ -20,10 +20,9 @@
   line-height: 1;
   font-weight: 400;
   text-align: center;
-  border-bottom: 1px solid $grey-silver;
 
-  &--request {
-    border-bottom: none;
+  &--goods {
+    border-bottom: 1px solid $grey-silver;
   }
 }
 
