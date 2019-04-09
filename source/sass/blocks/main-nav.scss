@@ -1,0 +1,21 @@
+.main-nav {
+  color: $color-base-text;
+}
+
+.main-nav__list {
+  @include reset-list;
+  text-align: center;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 23px 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-base-text;
+  border-top: 1px solid $grey-silver;
+}

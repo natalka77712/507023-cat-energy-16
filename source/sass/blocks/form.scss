@@ -1,0 +1,90 @@
+.form {
+  padding-top: 40px;
+  padding-bottom: 32px;
+}
+
+.form__block {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  &--cat {
+    padding-top: 27px;
+    padding-bottom: 23px;
+  }
+
+  &--programm {
+    padding-top: 20px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid $grey-silver;
+    border-top: 1px solid $grey-silver;
+  }
+
+  &--owner {
+    margin-top: 32px;
+    margin-bottom: 35px;
+  }
+
+  &--comment {
+    padding-bottom: 31px;
+  }
+}
+
+.form__block-title {
+  margin-bottom: 35px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.form__text-input {
+  padding: 12px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: $grey-dark;
+  border: 1px solid $grey-silver;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__text-label,
+.form__radio-label,
+.form__checkbox-label {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__radio-label,
+.form__checkbox-label {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.form__textarea {
+  width: 280px;
+  padding: 13px 15px;
+  min-height: 150px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: $grey-dark;
+  border: 1px solid $grey-silver;
+}
+
+.form__btn-submit {
+  margin-top: 34px;
+  margin-bottom: 24px;
+}
+
+.form__legend {
+  font-size: 14px;
+  line-height: 16px;
+  color: $grey-dark;
+}

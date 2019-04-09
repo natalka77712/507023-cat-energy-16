@@ -1,0 +1,28 @@
+.advantages {
+  padding-top: 28px;
+  padding-bottom: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.advantages__list {
+  @include reset-list;
+}
+
+.advantages__item {
+  margin-bottom: 20px;
+  color: $grey-dark;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
