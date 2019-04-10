@@ -31,3 +31,9 @@
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    border-top: none;
+  }
+}

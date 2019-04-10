@@ -2,6 +2,10 @@
   color: $color-base-text;
 }
 
+.main-nav__toggle {
+  display: none;
+}
+
 .main-nav__list {
   @include reset-list;
   text-align: center;
@@ -18,4 +22,30 @@
   text-decoration: none;
   color: $color-base-text;
   border-top: 1px solid $grey-silver;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 516px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav__link {
+    border-top: none;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__link {
+    font-size: 20px;
+    color: white;
+  }
 }

@@ -4,7 +4,9 @@
   padding-right: 20px;
   margin-bottom: 22px;
   text-align: center;
-  background: $light-green url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background: linear-gradient(to bottom, transparent 305px, white 175px), $light-green url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background-position: center, top;
+  background-size: auto, cover;
 }
 
 .main-block__title {
@@ -23,4 +25,54 @@
   line-height: 14px;
   text-transform: uppercase;
   color: white;
+}
+
+@media (min-width: $tablet-width) {
+  .main-block {
+    position: relative;
+    padding-top: 59px;
+    padding-left: 87px;
+    min-height: 860px;
+    text-align: left;
+    background: none;
+  }
+
+  .main-block__title {
+    margin-bottom: 36px;
+    width: 460px;
+    font-size: 60px;
+    line-height: 1;
+    color: $color-base-text;
+  }
+
+  .main-block__description {
+    margin-bottom: 49px;
+    font-size: 20px;
+    line-height: 1;
+    color: $color-base-text;
+  }
+
+  .main-block__image {
+    position: absolute;
+    z-index: -1;
+    width: 709px;
+    height: 609px;
+  }
+
+  .main-block__btn {
+    z-index: 2;
+    padding: 16px 23px;
+    width: auto;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-block {
+    padding-left: 120px;
+    padding-right: 40px;
+    padding-top: 110px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
 }
