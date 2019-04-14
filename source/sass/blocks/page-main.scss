@@ -20,10 +20,6 @@
   line-height: 1;
   font-weight: 400;
   text-align: center;
-
-  &--goods {
-    border-bottom: 1px solid $grey-silver;
-  }
 }
 
 .page-main__description {
@@ -35,5 +31,12 @@
 @media (min-width: $tablet-width) {
   .page-main {
     border-top: none;
+  }
+
+  .page-main__title {
+    padding-top: 30px;
+    padding-bottom: 55px;
+    font-size: 60px;
+    text-align: left;
   }
 }

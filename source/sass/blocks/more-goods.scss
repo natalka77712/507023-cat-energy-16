@@ -27,3 +27,35 @@
   color: $grey-dark;
   background-color: $grey;
 }
+
+@media (min-width: $tablet-width) {
+  .more-goods {
+    padding-bottom: 40px;
+    padding-top: 165px;
+    margin: 0 auto;
+    width: 324px;
+    border: 1px solid $grey-silver;
+  }
+
+  .more-goods__wrapper {
+    padding: 0 38px 40px;
+  }
+
+  .more-goods__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 auto 25px;
+  }
+
+  .more-goods__promo {
+    font-size: 16px;
+    margin: 0 auto 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more-goods {
+    width: 245px;
+    margin: 0 auto;
+  }
+}

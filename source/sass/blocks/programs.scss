@@ -1,16 +1,15 @@
-.programs {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .programs__list {
   @include reset-list;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .programs__item {
   padding: 23px 20px 22px;
   margin-bottom: 20px;
   background-color: $grey;
+  flex: 0 0 100%;
 }
 
 .programs__title {
@@ -34,8 +33,68 @@
 .programs__link {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   text-transform: uppercase;
   text-decoration: none;
   color: $color-base-text;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item {
+    width: 708px;
+    padding: 81px 62px 62px 55px;
+    margin-bottom: 30px;
+  }
+
+  .programs__item-wrapper {
+    width: 371px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+  }
+
+  .programs__description {
+    margin-bottom: 27px;
+    padding-bottom: 27px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .programs__item {
+    flex: 0 0 44%;
+    padding: 80px 65px 62px 55px;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .programs__item-wrapper {
+    width: 450px;
+  }
+
+  .programs__title {
+    padding-left: 164px;
+    margin-bottom: 75px;
+  }
+
+  .programs__description {
+    margin-bottom: 19px;
+    padding-bottom: 19px;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 1;
+  }
 }

@@ -1,9 +1,12 @@
-.page-header {
-  padding-left: 20px;
-  padding-right: 20px;
+.page-header__inner {
+  padding: 10px 20px;
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__inner {
+    padding: 0;
+  }
+
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;
@@ -12,7 +15,12 @@
   .page-header {
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 23px;
+    padding-top: 13px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .page-header__logo-image {
@@ -26,9 +34,7 @@
   .page-header {
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 53px;
-    margin-left: 70px;
-    margin-right: 70px;
+    padding-top: 23px;
   }
 
   .page-header__logo-image {
