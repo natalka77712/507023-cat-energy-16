@@ -37,7 +37,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 64px 70px;
+    padding: 61px 70px;
   }
 
   .contacts__title {
@@ -50,5 +50,14 @@
     font-size: 16px;
     line-height: 20px;
     max-width: 170px;
+  }
+
+  .contacts__city {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .contacts__map {
+    height: 400px;
   }
 }

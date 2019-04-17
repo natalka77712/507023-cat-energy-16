@@ -1,0 +1,13 @@
+.title-section {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .title-section {
+    font-size: 60px;
+    line-height: 1;
+  }
+}

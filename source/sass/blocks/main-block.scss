@@ -1,4 +1,4 @@
-.main-block__wrapper {
+.main-block {
   margin-bottom: 22px;
   text-align: center;
   background: linear-gradient(to bottom, transparent 305px, white 175px), $light-green url("../img/index-background-mobile@1x.jpg") no-repeat;
@@ -25,25 +25,24 @@
 }
 
 .main-block__image {
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 @media (min-width: $tablet-width) {
-  .main-block__wrapper {
+  .main-block {
     position: relative;
     min-height: 860px;
     text-align: left;
     background: none;
   }
 
-  .main-block__box {
-    text-align: left;
-    padding-left: 80px;
+  .main-block__container--index {
+    padding-left: 90px;
   }
 
   .main-block__title {
     padding-top: 59px;
-    margin-bottom: 36px;
+    margin-bottom: 33px;
     width: 460px;
     font-size: 60px;
     line-height: 1;
@@ -51,7 +50,7 @@
   }
 
   .main-block__description {
-    margin-bottom: 49px;
+    margin-bottom: 48px;
     font-size: 20px;
     line-height: 1;
     color: $color-base-text;
@@ -59,9 +58,9 @@
 
   .main-block__image {
     position: absolute;
-    bottom: -30px;
+    bottom: 0;
     z-index: -1;
-    margin-left: -80px;
+    margin-left: -50px;
     width: 709px;
     height: 609px;
   }
@@ -75,19 +74,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-block__wrapper {
-    z-index: -1;
+  .main-block {
     margin-bottom: 80px;
     margin-top: -136px;
-    padding-left: 30px;
     min-height: 696px;
     text-align: left;
-    background: linear-gradient(to right, white 50%, transparent 50%), $light-green url("../img/index-background-desktop@1x.jpg") no-repeat;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat, linear-gradient(to right, white 50%, $light-green 50%);
     background-position: right top;
   }
 
-  .main-block__box {
-    padding-left: 0;
+  .main-block__container--index {
+    padding-left: 80px;
   }
 
   .main-block__title {
@@ -95,6 +92,7 @@
   }
 
   .main-block__image {
+    z-index: 2;
     margin-left: 390px;
     bottom: 50px;
     width: 552px;

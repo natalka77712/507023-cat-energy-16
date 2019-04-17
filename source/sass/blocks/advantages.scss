@@ -1,15 +1,11 @@
 .advantages__container {
-  padding-top: 15px;
+  padding-top: 20px;
   padding-bottom: 45px;
 }
 
 .advantages__title {
   margin: 0;
   margin-bottom: 40px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 36px;
-  line-height: 1;
-  font-weight: 400;
 }
 
 .advantages__list {
@@ -34,6 +30,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages__container {
+    padding-bottom: 55px;
+  }
+
+  .advantages__title {
+    margin-bottom: 60px;
+  }
+
   .advantages__list {
     flex-direction: row;
   }
