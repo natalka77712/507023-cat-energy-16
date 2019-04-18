@@ -5,14 +5,12 @@
 }
 
 .promo__title {
-  margin: 0;
-  margin-bottom: 35px;
+  margin: 0 0 35px;
 }
 
 .promo__example {
-  margin: 0;
-  margin-bottom: 24px;
-  color: $grey-dark;
+  margin: 0 0 24px;
+  padding-right: 14px;
 }
 
 .promo__stats-wrapper {
@@ -33,6 +31,7 @@
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
+  color: $color-base-text;
   text-transform: uppercase;
 }
 
@@ -40,15 +39,13 @@
   margin: 0;
   font-size: 12px;
   line-height: 1;
-  color: $grey-dark;
 }
 
 .promo__costs {
-  margin: 0;
-  margin-top: 15px;
-  margin-bottom: 35px;
+  margin: 15px 0 35px;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 20px;
+  color: $color-base-text;
   text-align: center;
   text-transform: uppercase;
 }
@@ -64,12 +61,12 @@
 }
 
 .promo__range-control {
+  margin-left: 18px;
+  margin-right: 18px;
   width: 84px;
   border: 1px solid $grey-pinkish;
   border-radius: 6px;
   position: relative;
-  margin-left: 18px;
-  margin-right: 18px;
 }
 
 .promo__range-btn {
@@ -111,9 +108,9 @@
   }
 
   .promo__example {
+    margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 55px;
   }
 
   .promo__stats-option {
@@ -150,6 +147,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .promo {
+    border-top: 0;
+  }
+
   .promo__container {
     display: flex;
     flex-wrap: wrap;

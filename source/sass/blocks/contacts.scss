@@ -15,6 +15,7 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  color: $color-base-text;
   text-transform: uppercase;
 }
 
@@ -22,7 +23,6 @@
   margin: 0;
   flex: 0 0 50%;
   line-height: 20px;
-  color: $grey-dark;
 }
 
 .contacts__map {
