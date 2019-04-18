@@ -1,6 +1,6 @@
 .page-main__title {
   margin: 0;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 38px;
   text-align: center;
 }
@@ -13,8 +13,22 @@
 
 @media (min-width: $tablet-width) {
   .page-main__title {
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 55px;
     text-align: left;
+  }
+
+  .page-main__description {
+    padding-left: 39px;
+    width: 380px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__description {
+    padding-left: 0;
+    padding-bottom: 65px;
   }
 }
