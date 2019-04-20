@@ -15,7 +15,7 @@
 
 .promo__stats-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -36,9 +36,12 @@
 }
 
 .promo__stats-option {
-  margin: 0;
+  display: block;
+  padding: 0 10px;
+  margin: 0 15px;
   font-size: 12px;
   line-height: 1;
+  text-align: center;
 }
 
 .promo__costs {
@@ -48,6 +51,13 @@
   color: $color-base-text;
   text-align: center;
   text-transform: uppercase;
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+  height: 240px;
 }
 
 .promo__range {

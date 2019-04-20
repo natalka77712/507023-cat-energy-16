@@ -47,24 +47,20 @@
 }
 
 .additional-ingredient__offer-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 39px auto 35px;
-  text-align: center;
   width: 100%;
   min-height: 289px;
-  color: white;
   background: $green url("../img/gift-photo-mobile@1x.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .additional-ingredient__offer {
-  margin: 0;
+  margin: 0 auto;
   max-width: 150px;
   font-size: 16px;
   line-height: 20px;
+  color: white;
 }
 
 @media (min-width: $tablet-width) {
@@ -81,7 +77,8 @@
 
   .additional-ingredient__item {
     padding: 27px 37px;
-    border: 1px solid $grey-silver;
+    border-left: 1px solid $grey-silver;
+    border-right: 1px solid $grey-silver;
   }
 
   .additional-ingredient__wrapper {
@@ -125,6 +122,8 @@
     flex-wrap: wrap;
     padding: 15px 0;
     align-items: center;
+    border-left: none;
+    border-right: none;
   }
 
   .additional-ingredient__wrapper {

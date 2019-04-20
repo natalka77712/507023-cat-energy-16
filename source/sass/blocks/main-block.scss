@@ -1,7 +1,9 @@
 .main-block {
-  margin-bottom: 22px;
+  padding-bottom: 22px;
   text-align: center;
-  background: linear-gradient(to bottom, transparent 305px, white 175px), $light-green url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background:
+    url("../img/index-background-mobile@1x.jpg") no-repeat,
+    linear-gradient(to bottom, $light-green  305px, white 305px);
   background-position: center top;
 }
 
@@ -24,7 +26,10 @@
 }
 
 .main-block__image {
-  margin-top: 30px;
+  display: block;
+  margin: 30px auto 0;
+  width: 280px;
+  height: 270px;
 }
 
 @media (min-width: $tablet-width) {
@@ -78,7 +83,9 @@
     margin-top: -136px;
     min-height: 696px;
     text-align: left;
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat, linear-gradient(to right, white 50%, $light-green 50%);
+    background:
+      url("../img/index-background-desktop@1x.jpg") no-repeat,
+      linear-gradient(to right, white 50%, $light-green 50%);
     background-position: right top;
   }
 
