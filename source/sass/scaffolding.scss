@@ -14,7 +14,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: $color-base-text;
+  color: $grey-dark;
 }
 
 img {
@@ -36,6 +36,24 @@ img {
 .container {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 748px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1260px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .btn {

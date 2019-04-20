@@ -1,24 +1,27 @@
 .promo {
   padding-top: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 39px;
   background-color: $grey;
 }
 
 .promo__title {
-  margin: 0;
-  margin-bottom: 35px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 36px;
-  line-height: 1;
-  font-weight: 400;
+  margin: 0 0 35px;
 }
 
 .promo__example {
-  margin: 0;
-  margin-bottom: 24px;
-  color: $grey-dark;
+  margin: 0 0 24px;
+  padding-right: 14px;
+}
+
+.promo__stats-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.promo__stats-unit {
+  flex: 0 0 44%;
+  text-align: center;
 }
 
 .promo__stats-value {
@@ -26,30 +29,54 @@
   margin-bottom: 10px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   font-weight: 400;
+  color: $color-base-text;
   text-transform: uppercase;
 }
 
 .promo__stats-option {
-  margin: 0;
+  display: block;
+  padding: 0 10px;
+  margin: 0 15px;
   font-size: 12px;
-  line-height: 12px;
-  color: $grey-dark;
+  line-height: 1;
+  text-align: center;
 }
 
 .promo__costs {
-  margin: 0;
-  margin-bottom: 35px;
+  margin: 15px 0 35px;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 20px;
+  color: $color-base-text;
   text-align: center;
   text-transform: uppercase;
 }
 
+.promo__image {
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+  height: 240px;
+}
+
 .promo__range {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   padding-top: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+  width: 100%;
+}
+
+.promo__range-control {
+  margin-left: 18px;
+  margin-right: 18px;
+  width: 84px;
+  border: 1px solid $grey-pinkish;
+  border-radius: 6px;
+  position: relative;
 }
 
 .promo__range-btn {
@@ -62,4 +89,103 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding-top: 35px;
+    border-top: 1px solid $grey-light;
+    background: linear-gradient(to bottom, white 621px, $grey 462px);
+  }
+
+  .promo__stats-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .promo__stats-wrapper {
+    flex: 0 0 52%;
+    justify-content: flex-start;
+  }
+
+  .promo__stats-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .promo__title {
+    margin-bottom: 60px;
+  }
+
+  .promo__example {
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .promo__stats-option {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .promo__costs {
+    margin-left: auto;
+    max-width: 195px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .promo__image {
+    margin: 0 auto;
+    display: block;
+    width: 690px;
+    max-width: 690px;
+    height: 517px;
+  }
+
+  .promo__range {
+    max-width: 575px;
+    padding: 10px 0 30px;
+  }
+
+  .promo__range-btn {
+    padding-bottom: 8px;
+    font-size: 20px;
+    border-bottom: 1px dotted $grey-light;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    border-top: 0;
+  }
+
+  .promo__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .promo__wrapper {
+    padding-top: 72px;
+    padding-bottom: 75px;
+    flex: 0 0 37%;
+    display: flex;
+    flex-direction: column;
+    max-width: 37%;
+  }
+
+  .promo__stats-box {
+    flex-direction: column;
+  }
+
+  .promo__costs {
+    margin: 0;
+    min-width: 325px;
+    text-align: left;
+  }
+
+  .promo__inner {
+    flex: 0 0 62%;
+  }
 }
