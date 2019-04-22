@@ -100,9 +100,22 @@
 
 @media (min-width: $tablet-width) {
   .promo {
+    position: relative;
+    z-index: 1;
     padding-top: 50px;
     border-top: 1px solid $grey-light;
     background: linear-gradient(to bottom, white 619px, $grey 619px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 462px;
+      background: linear-gradient(to right, $grey 50%, $grey-cloud 50%);
+    }
   }
 
   .promo__stats-box {
@@ -199,6 +212,10 @@
     padding-top: 0;
     padding-bottom: 75px;
     background: linear-gradient(to bottom, white 219px, $grey 219px);
+
+    &::after {
+      background: linear-gradient(to right, $grey 70%, $grey-cloud 30%);
+    }
   }
 
   .promo__container {
