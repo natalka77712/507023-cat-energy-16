@@ -60,7 +60,7 @@ img {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  padding: 10px 22px;
+  padding: 11px 10px;
   font-size: 16px;
   line-height: 20px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -70,4 +70,12 @@ img {
   color: white;
   background-color: $green;
   border: 0;
+
+  &:hover {
+    background-color: $leaf-green;
+  }
+
+  &:active {
+    color: rgba(255, 225, 225, 0.3);
+  }
 }

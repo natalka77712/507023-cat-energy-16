@@ -1,8 +1,16 @@
 .page-header__logo-link {
   display: block;
-  padding: 11px;
-  padding-bottom: 17px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   max-width: 230px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__logo-image {

@@ -7,8 +7,12 @@
 .additional-ingredient__box {
   display: flex;
   justify-content: space-between;
-  margin: 0;
   line-height: 1;
+}
+
+.additional-ingredient__volume,
+.additional-ingredient__price {
+  margin: 0;
 }
 
 .additional-ingredient__title {
@@ -48,6 +52,7 @@
 }
 
 .additional-ingredient__offer-wrap {
+  position: relative;
   margin-top: 39px;
   width: 100%;
   min-height: 289px;
@@ -58,6 +63,7 @@
 
 .additional-ingredient__offer {
   margin: 0 auto;
+  padding-top: 185px;
   max-width: 150px;
   font-size: 16px;
   line-height: 20px;
@@ -101,14 +107,25 @@
     background: $green url("../img/gift-photo-tablet@1x.jpg") no-repeat;
   }
 
+  .additional-ingredient__offer {
+    padding: 70px 35px;
+    max-width: 235px;
+  }
+
   .additional-ingredient__box {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
   }
 
-  .additional-ingredient__volume,
+  .additional-ingredient__volume {
+    margin: 0;
+    width: 150px;
+  }
+
   .additional-ingredient__price {
     margin: 0;
+    width: 100px;
   }
 }
 
@@ -138,6 +155,21 @@
 
   .additional-ingredient__wrapper {
     justify-content: space-between;
+  }
+
+  .additional-ingredient__sub {
+    margin-bottom: 0;
+    padding-right: 40px;
+    width: 280px;
+  }
+
+  .additional-ingredient__volume {
+    width: 200px;
+  }
+
+  .additional-ingredient__price {
+    width: 120px;
+    text-align: right;
   }
 
   .additional-ingredient__btn {
