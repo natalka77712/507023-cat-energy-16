@@ -20,19 +20,22 @@
 }
 
 .promo__stats-unit {
-  flex: 0 0 44%;
+  flex: 0 0 47%;
   text-align: center;
 }
 
 .promo__stats-value {
   display: block;
   margin-bottom: 10px;
+  padding: 15px 10px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
   color: $color-base-text;
   text-transform: uppercase;
+  border: 1px solid $grey-pinkish;
+  border-radius: 3px;
 }
 
 .promo__stats-option {
@@ -42,6 +45,8 @@
   font-size: 12px;
   line-height: 1;
   text-align: center;
+  transform: translateY(-20px);
+  background-color: $grey;
 }
 
 .promo__costs {
@@ -58,6 +63,10 @@
   margin: 0 auto;
   width: 320px;
   height: 240px;
+
+  &--after {
+    display: none;
+  }
 }
 
 .promo__range {
@@ -65,9 +74,7 @@
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 30px;
-  padding-left: 35px;
-  padding-right: 35px;
-  width: 100%;
+  max-width: 200px;
 }
 
 .promo__range-control {
@@ -93,9 +100,22 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    padding-top: 35px;
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
     border-top: 1px solid $grey-light;
-    background: linear-gradient(to bottom, white 621px, $grey 462px);
+    background: linear-gradient(to bottom, white 619px, $grey 619px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 462px;
+      background: linear-gradient(to right, $grey 50%, $grey-cloud 50%);
+    }
   }
 
   .promo__stats-box {
@@ -104,8 +124,12 @@
   }
 
   .promo__stats-wrapper {
-    flex: 0 0 52%;
-    justify-content: flex-start;
+    max-width: 365px;
+    width: 100%;
+  }
+
+  .promo__stats-unit {
+    max-width: 162px;
   }
 
   .promo__stats-value {
@@ -114,7 +138,7 @@
   }
 
   .promo__title {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
   }
 
   .promo__example {
@@ -126,6 +150,7 @@
   .promo__stats-option {
     font-size: 14px;
     line-height: 1;
+    background-color: white;
   }
 
   .promo__costs {
@@ -136,12 +161,37 @@
     line-height: 1;
   }
 
+  .promo__inner {
+    position: relative;
+  }
+
+  .promo__group-image {
+    position: relative;
+    height: 517px;
+  }
+
+  .promo__wrap--before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+    width: 345px;
+  }
+
+  .promo__wrap--after {
+    position: relative;
+    z-index: 1;
+  }
+
   .promo__image {
-    margin: 0 auto;
-    display: block;
     width: 690px;
     max-width: 690px;
     height: 517px;
+
+    &--after {
+      display: block;
+    }
   }
 
   .promo__range {
@@ -159,6 +209,13 @@
 @media (min-width: $desktop-width) {
   .promo {
     border-top: 0;
+    padding-top: 0;
+    padding-bottom: 75px;
+    background: linear-gradient(to bottom, white 219px, $grey 219px);
+
+    &::after {
+      background: linear-gradient(to right, $grey 70%, $grey-cloud 30%);
+    }
   }
 
   .promo__container {
@@ -167,25 +224,35 @@
   }
 
   .promo__wrapper {
-    padding-top: 72px;
-    padding-bottom: 75px;
-    flex: 0 0 37%;
     display: flex;
     flex-direction: column;
-    max-width: 37%;
+    padding-top: 72px;
+    max-width: 430px;
+  }
+
+  .promo__example {
+    margin-top: 76px;
   }
 
   .promo__stats-box {
     flex-direction: column;
   }
 
+  .promo__stats-option {
+    background-color: $grey;
+  }
+
   .promo__costs {
     margin: 0;
-    min-width: 325px;
+    max-width: 355px;
     text-align: left;
   }
 
+  .promo__mark {
+    margin-right: 60px;
+  }
+
   .promo__inner {
-    flex: 0 0 62%;
+    margin-left: auto;
   }
 }
