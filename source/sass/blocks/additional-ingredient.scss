@@ -1,6 +1,6 @@
 .additional-ingredient {
   margin: 0;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 35px;
 }
 
@@ -31,8 +31,8 @@
 }
 
 .additional-ingredient__item {
-  padding-top: 14px;
-  padding-bottom: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-bottom: 1px solid $grey-silver;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .additional-ingredient__btn {
-  margin-top: 15px;
+  margin-top: 12px;
 }
 
 .additional-ingredient__offer-wrap {
@@ -73,18 +73,19 @@
 
 @media (min-width: $tablet-width) {
   .additional-ingredient {
-    padding-top: 11px;
+    padding-top: 50px;
     padding-bottom: 76px;
   }
 
   .additional-ingredient__title {
-    margin-bottom: 75px;
+    padding-left: 30px;
+    margin-bottom: 76px;
     font-size: 36px;
     line-height: 1;
   }
 
   .additional-ingredient__item {
-    padding: 27px 37px;
+    padding: 25px 37px;
     border-left: 1px solid $grey-silver;
     border-right: 1px solid $grey-silver;
   }
@@ -109,7 +110,9 @@
 
   .additional-ingredient__offer {
     padding: 70px 35px;
+    margin-right: 85px;
     max-width: 235px;
+    text-align: left;
   }
 
   .additional-ingredient__box {
@@ -136,8 +139,12 @@
   }
 
   .additional-ingredient {
-    padding-top: 19px;
+    padding-top: 59px;
     padding-bottom: 86px;
+  }
+
+  .additional-ingredient__title {
+    padding-left: 0;
   }
 
   .additional-ingredient__list {
@@ -159,17 +166,21 @@
 
   .additional-ingredient__sub {
     margin-bottom: 0;
-    padding-right: 40px;
+    margin-right: 40px;
     width: 280px;
   }
 
+  .additional-ingredient__box {
+    text-align: left;
+  }
+
   .additional-ingredient__volume {
-    width: 200px;
+    width: 210px;
   }
 
   .additional-ingredient__price {
     width: 120px;
-    text-align: right;
+    text-align: center;
   }
 
   .additional-ingredient__btn {
@@ -184,5 +195,12 @@
     min-height: 289px;
     width: 245px;
     background: $green url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+  }
+
+  .additional-ingredient__offer {
+    padding: 185px 35px 45px;
+    width: 235px;
+    text-align: center;
+    padding-top: 185px;
   }
 }

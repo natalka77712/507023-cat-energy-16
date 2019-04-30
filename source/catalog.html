@@ -7,7 +7,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header page-header--catalog">
     <div class="page-header__container container">
       <a class="page-header__logo-link" href="index.html" aria-label="Перейти на главную страницу">
         <picture>
@@ -17,7 +17,7 @@
         </picture>
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button type="button" class="main-nav__toggle" aria-label="Открыть меню"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -41,7 +41,11 @@
     <ul class="catalog__list">
       <li class="catalog__item">
         <a class="catalog__link" href="#">
-          <img class="catalog__item-img" src="img/chicken-small-mobile@1x.jpg" alt="Cat energy pro с курицей 500г">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png, img/chicken-small-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png, img/chicken-small-tablet@2x.png 2x">
+            <img class="catalog__item-img" src="img/chicken-small-mobile@1x.jpg" alt="Cat energy pro с курицей 500г">
+          </picture>
         </a>
         <div class="catalog__wrapper">
           <a class="catalog__link" href="#">
@@ -68,7 +72,11 @@
       </li>
       <li class="catalog__item">
         <a class="catalog__link" href="#">
-          <img class="catalog__item-img" src="img/chicken-big-mobile@1x.jpg" alt="Cat energy pro с курицей 1000г">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png, img/chicken-big-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png, img/chicken-big-tablet@2x.png 2x">
+            <img class="catalog__item-img" src="img/chicken-big-mobile@1x.jpg" alt="Cat energy pro с курицей 1000г">
+          </picture>
         </a>
         <div class="catalog__wrapper">
           <a class="catalog__link" href="#">
@@ -95,7 +103,11 @@
       </li>
       <li class="catalog__item">
         <a class="catalog__link" href="#">
-          <img class="catalog__item-img" src="img/fish-small-mobile@1x.jpg" alt="Cat energy pro с рыбой 500г">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png, img/fish-small-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png, img/chicken-small-tablet@2x.png 2x">
+            <img class="catalog__item-img" src="img/fish-small-mobile@1x.jpg" alt="Cat energy pro с рыбой 500г">
+          </picture>
         </a>
         <div class="catalog__wrapper">
           <a class="catalog__link" href="#">
@@ -122,7 +134,11 @@
       </li>
       <li class="catalog__item">
         <a class="catalog__link" href="#">
-          <img class="catalog__item-img" src="img/fish-big-mobile@1x.jpg" alt="Cat energy pro с рыбой 1000г">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png, img/fish-big-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png, img/fish-big-tablet@2x.png 2x">
+            <img class="catalog__item-img" src="img/fish-big-mobile@1x.jpg" alt="Cat energy pro с рыбой 1000г">
+          </picture>
         </a>
         <div class="catalog__wrapper">
           <a class="catalog__link" href="#">
@@ -149,7 +165,11 @@
       </li>
       <li class="catalog__item">
         <a class="catalog__link" href="#">
-          <img class="catalog__item-img" src="img/buckwheat-small-mobile@1x.jpg" alt="Cat energy slim с гречкой 500г">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png, img/buckwheat-small-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png, img/buckwheat-small-tablet@2x.png 2x">
+            <img class="catalog__item-img" src="img/buckwheat-small-mobile@1x.jpg" alt="Cat energy slim с гречкой 500г">
+          </picture>
         </a>
         <div class="catalog__wrapper">
           <a class="catalog__link" href="#">
@@ -176,7 +196,11 @@
       </li>
       <li class="catalog__item">
         <a class="catalog__link" href="#">
-          <img class="catalog__item-img" src="img/buckwheat-big-mobile@1x.jpg" alt="Cat energy с гречкой 1000г">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png, img/buckwheat-big-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png, img/chicken-small-tablet@2x.png 2x">
+            <img class="catalog__item-img" src="img/buckwheat-big-mobile@1x.jpg" alt="Cat energy с гречкой 1000г">
+          </picture>
         </a>
         <div class="catalog__wrapper">
           <a class="catalog__link" href="#">
@@ -203,7 +227,11 @@
       </li>
       <li class="catalog__item">
         <a class="catalog__link" href="#">
-          <img class="catalog__item-img" src="img/rice-small-mobile@1x.jpg" alt="Cat energy slim с рисом 500г">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png, img/rice-small-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png, img/rice-small-tablet@2x.png 2x">
+            <img class="catalog__item-img" src="img/rice-small-mobile@1x.jpg" alt="Cat energy slim с рисом 500г">
+          </picture>
         </a>
         <div class="catalog__wrapper">
           <a class="catalog__link" href="#">
@@ -296,7 +324,7 @@
       <div class="contacts container">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8<span class="contacts__city">Санкт-Петербург</span></p>
+          <p class="contacts__adress contacts__adress--catalog">ул. Большая Конюшенная, д. 19/8<span class="contacts__city">Санкт-Петербург</span></p>
         </div>
       </div>
       <div class="contacts__map" aria-label="Расположение организации Cat Energy на карте">
@@ -333,5 +361,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
+
 </body>
 </html>

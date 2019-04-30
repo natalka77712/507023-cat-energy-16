@@ -6,7 +6,7 @@
 
 .catalog__item {
   position: relative;
-  padding: 25px 20px;
+  padding: 0 20px 22px;
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px solid $grey-silver;
@@ -19,6 +19,7 @@
   &--more::after {
     position: absolute;
     content: "";
+    top: 25px;
     left: 45%;
     width: 31px;
     height: 31px;
@@ -37,6 +38,8 @@
 }
 
 .catalog__title {
+  padding: 23px 50px 10px 0;
+  margin: 0;
   max-width: 130px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -47,8 +50,9 @@
   color: $color-base-text;
 
   &--more {
+    padding: 0;
     max-width: none;
-    margin: 0 auto 10px;
+    margin: 0 auto 8px;
   }
 }
 
@@ -67,12 +71,10 @@
 }
 
 .catalog__item-name {
-  padding: 8px 0;
   font-weight: 400;
 }
 
 .catalog__item-value {
-  padding: 8px 0;
   text-align: right;
 }
 
@@ -90,7 +92,7 @@
 }
 
 .catalog__inner {
-  padding-top: 62px;
+  padding-top: 80px;
   flex: 0 0 100%;
 }
 
@@ -101,7 +103,7 @@
   color: $grey-dark;
 }
 
-@media (max-width: $tablet-width -1) {
+@media (max-width: $tablet-width - 1) {
   .catalog__list {
     border-top: 1px solid $grey-silver;
   }
@@ -124,8 +126,9 @@
 
   .catalog__item {
     text-align: center;
-    margin-bottom: 60px;
-    padding: 36px;
+    margin-bottom: 20px;
+    margin-top: 117px;
+    padding: 38px 36px 40px 36px;
     flex: 0 0 324px;
     background-color: $grey;
 
@@ -140,11 +143,16 @@
     }
 
     &--more::after {
-      top: 54px;
+      top: 57px;
+      left: 40%;
       width: 60px;
       height: 60px;
       background-image: url("../img/icon-plus.svg");
     }
+  }
+
+  .catalog__item-img {
+    display: none;
   }
 
   .catalog__wrapper {
@@ -155,15 +163,17 @@
 
   .catalog__title {
     max-width: 160px;
-    margin: 30px auto 20px;
+    margin: 120px auto 8px;
+    padding: 8px;
     font-size: 20px;
 
     &--more {
-      margin: 0 auto 25px;
+      margin: 0 auto 16px;
     }
   }
 
   .catalog__info {
+    margin-bottom: 32px;
     width: 249px;
     font-size: 16px;
     line-height: 1;
@@ -174,25 +184,29 @@
   }
 
   .catalog__item-name {
+    padding: 7px 8px 8px 0;
     text-align: left;
     font-size: 16px;
   }
 
   .catalog__item-value {
+    padding-top: 7px;
+    padding-bottom: 4px;
     text-align: right;
     font-size: 16px;
   }
 
   .catalog__btn {
-    margin-top: 30px;
+    align-items: baseline;
+    margin-top: auto;
   }
 
   .catalog__inner {
-    padding-top: 166px;
+    padding-top: 160px;
   }
 
   .catalog__promo {
-    margin: 0 auto 90px;
+    margin: 0 auto 80px;
     font-size: 16px;
     width: 180px;
     line-height: 20px;

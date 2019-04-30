@@ -88,17 +88,14 @@
 
   .main-nav__item {
     border-bottom: none;
-    margin-left: 35px;
-
-    &:first-child {
-      margin-left: 0;
-    }
+    margin-left: 25px;
   }
 
   .main-nav__link {
-    border-top: none;
+    padding: 21px 0;
     font-size: 18px;
     line-height: 25px;
+    border-top: none;
 
     &--active {
       position: relative;
