@@ -1,8 +1,16 @@
 .page-header__logo-link {
   display: block;
-  padding: 11px;
-  padding-bottom: 17px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   max-width: 230px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__logo-image {
@@ -12,13 +20,19 @@
 
 @media (min-width: $tablet-width) {
   .page-header__container {
+    padding-top: 16px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
   }
 
+  .page-header--catalog {
+    padding-top: 19px;
+  }
+
   .page-header__logo-link {
+    padding-top: 6px;
     max-width: 174px;
   }
 
@@ -33,7 +47,11 @@
   .page-header {
     position: relative;
     z-index: 1;
-    padding-top: 23px;
+    padding-top: 15px;
+
+    &--catalog {
+      padding-top: 12px;
+    }
   }
 
   .page-header__logo-link {
