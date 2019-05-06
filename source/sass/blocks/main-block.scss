@@ -5,7 +5,13 @@
     url("../img/index-background-mobile@1x.jpg") no-repeat,
     linear-gradient(to bottom, $light-green  305px, white 305px);
   background-position: center top;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
+
 
 .main-block__title {
   margin: 0 0 24px;
@@ -46,7 +52,7 @@
 
   .main-block__title {
     padding-top: 50px;
-    margin-bottom: 38px;
+    margin-bottom: 41px;
     width: 460px;
     font-size: 60px;
     line-height: 1;
@@ -87,15 +93,20 @@
       url("../img/index-background-desktop@1x.jpg") no-repeat,
       linear-gradient(to right, white 50%, $light-green 50%);
     background-position: right top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .main-block__container--index {
-    padding-left: 95px;
+    padding-left: 100px;
   }
 
   .main-block__title {
     padding-top: 235px;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 
   .main-block__description {

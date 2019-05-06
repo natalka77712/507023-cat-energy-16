@@ -117,7 +117,7 @@
     }
 
     &--weight-gain {
-      padding-top: 68px;
+      padding-top: 71px;
       margin-bottom: 55px;
     }
 
@@ -181,22 +181,22 @@
     }
 
     &::before {
-      top: 47px;
+      top: 48px;
       left: 52px;
       width: 100px;
       height: 100px;
     }
 
     &--losing-weight::after {
-      top: 70px;
-      left: 49px;
+      top: 45px;
+      left: 54px;
       width: 71px;
       height: 97px;
     }
 
     &--weight-gain::after {
-      top: 60px;
-      left: 34px;
+      top: 70px;
+      left: 45px;
       width: 134px;
       height: 57px;
     }
@@ -207,7 +207,7 @@
   }
 
   .programs__title {
-    padding-left: 164px;
+    padding-left: 155px;
     padding-top: 0;
     margin-bottom: 75px;
   }
