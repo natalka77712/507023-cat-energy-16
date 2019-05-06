@@ -40,7 +40,14 @@
       <div class="main-block__container main-block__container--index container">
         <h2 class="main-block__title">Функциональное питание для котов</h2>
         <p class="main-block__description">Занялся собой? Займись котом!</p>
-        <img class="main-block__image" src="img/index-can-mobile@1x.png" alt="Изображение продукции">
+        <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp, img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+          <img class="main-block__image" src="img/index-can-mobile@1x.png" srcset="/img/index-can-mobile@2x.png 2x" alt="Изображение продукции">
+        </picture>
         <a class="main-block__btn btn" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -107,10 +114,24 @@
         <div class="promo__inner">
           <div class="promo__group-image">
             <div class="promo__wrap promo__wrap--before">
-              <img class="promo__image promo__image--before" src="img/before-mobile@1x.png" alt="Изображение кота до">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="promo__image promo__image--before" src="img/before-mobile@1x.png" alt="Изображение кота до">
+              </picture>
             </div>
             <div class="promo__wrap promo__wrap--after">
-              <img class="promo__image promo__image--after" src="img/after-mobile@1x.png" alt="Изображение кота после">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="promo__image promo__image--after" src="img/after-mobile@1x.png" alt="Изображение кота после">
+              </picture>
             </div>
           </div>
           <div class="promo__range">
@@ -127,14 +148,22 @@
 
   <footer class="page-footer">
     <section class="page-footer__contacts page-footer__contacts--main-page">
-      <div class="contacts container">
+        <div class="contacts contacts--index container">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8<span class="contacts__city">Санкт-Петербург</span></p>
         </div>
       </div>
       <div class="contacts__map" aria-label="Расположение организации Cat Energy на карте">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1553350954270" allowfullscreen=""></iframe>
+        <picture class="contacts__wrap">
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="contacts__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+        </picture>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1553350954270" width="320" height="362" style="border:0;" allowfullscreen=""></iframe>
       </div>
     </section>
     <div class="page-footer__wrapper">
@@ -169,6 +198,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/picturefill.js"></script>
 
 </body>
 </html>

@@ -6,7 +6,7 @@
 
 .catalog__item {
   position: relative;
-  padding: 0 20px 22px;
+  padding: 0 20px 23px;
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px solid $grey-silver;
@@ -58,8 +58,8 @@
 
 .catalog__item-img {
   display: block;
-  width: 140px;
-  height: 144px;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .catalog__info {
@@ -127,8 +127,8 @@
   .catalog__item {
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 117px;
-    padding: 38px 36px 40px 36px;
+    margin-top: 120px;
+    padding: 38px 38px 35px 36px;
     flex: 0 0 324px;
     background-color: $grey;
 
@@ -139,7 +139,7 @@
     &--more {
       background-color: white;
       border: 1px solid $grey;
-      padding: 0 38px 40px;
+      padding: 0 38px 42px;
     }
 
     &--more::after {
@@ -152,7 +152,9 @@
   }
 
   .catalog__item-img {
-    display: none;
+    flex: 0 0 auto;
+    max-width: inherit;
+    margin: -120px -40px 0;
   }
 
   .catalog__wrapper {
@@ -163,17 +165,17 @@
 
   .catalog__title {
     max-width: 160px;
-    margin: 120px auto 8px;
-    padding: 8px;
+    margin: 36px auto 13px;
+    padding: 3px;
     font-size: 20px;
 
     &--more {
-      margin: 0 auto 16px;
+      margin: 0 auto 20px;
     }
   }
 
   .catalog__info {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     width: 249px;
     font-size: 16px;
     line-height: 1;
@@ -184,7 +186,7 @@
   }
 
   .catalog__item-name {
-    padding: 7px 8px 8px 0;
+    padding: 9px 8px 8px 0;
     text-align: left;
     font-size: 16px;
   }
@@ -202,11 +204,11 @@
   }
 
   .catalog__inner {
-    padding-top: 160px;
+    padding-top: 164px;
   }
 
   .catalog__promo {
-    margin: 0 auto 80px;
+    margin: 0 auto 82px;
     font-size: 16px;
     width: 180px;
     line-height: 20px;
@@ -215,6 +217,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog__item {
+    padding-bottom: 37px;
     flex: 0 0 245px;
   }
 
@@ -230,6 +233,14 @@
 
   .catalog__info {
     width: inherit;
+  }
+
+  .catalog__inner {
+    padding-top: 162px;
+  }
+
+  .catalog__title--more {
+    margin: 0 auto 23px;
   }
 
   .catalog__promo {

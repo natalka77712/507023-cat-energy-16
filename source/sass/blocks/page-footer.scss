@@ -47,7 +47,7 @@
   }
 
   .page-footer__wrapper {
-    padding-top: 45px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 
@@ -74,5 +74,13 @@
 @media (min-width: $desktop-width) {
   .page-footer__contacts {
     position: relative;
+  }
+
+  .page-footer__wrapper {
+    padding-top: 55px;
+
+    &--catalog {
+      padding-top: 48px;
+    }
   }
 }
