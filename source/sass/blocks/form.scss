@@ -42,6 +42,7 @@
 
 .form__text-wrapper {
   display: flex;
+  position: relative;
   align-items: center;
   padding-bottom: 13px;
 }
@@ -70,6 +71,30 @@
 
   &:invalid {
     border: 2px solid $red;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  top: 30%;
+  right: 15px;
+
+  &:active {
+    fill: $green;
+  }
+
+  &:invalid {
+    fill: $red;
+  }
+
+  &--email {
+    width: 17px;
+    height: 13px;
+  }
+
+  &--phone {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -112,7 +137,7 @@
 }
 
 .form__textarea {
-  padding: 10px 7px 7px;
+  padding: 12px 5px 5px;
   width: 100%;
   min-height: 150px;
   border: 1px solid $grey-silver;
@@ -128,8 +153,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 1px;
-    left: 4px;
+    top: 3px;
+    left: 0;
     width: 30px;
     height: 30px;
     border: 1px solid $grey-pinkish;
@@ -159,8 +184,7 @@
 }
 
 .form__btn-submit {
-  margin-top: 22px;
-  margin-bottom: 24px;
+  margin: 24px 0;
 }
 
 .form__legend {
