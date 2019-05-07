@@ -59,7 +59,8 @@
 .catalog__item-img {
   display: block;
   flex: 0 0 50%;
-  max-width: 50%;
+  width: 140px;
+  height: 144px;
 }
 
 .catalog__info {
@@ -128,7 +129,7 @@
     text-align: center;
     margin-bottom: 20px;
     margin-top: 120px;
-    padding: 38px 38px 35px 36px;
+    padding: 39px 38px 43px 36px;
     flex: 0 0 324px;
     background-color: $grey;
 
@@ -152,9 +153,9 @@
   }
 
   .catalog__item-img {
-    flex: 0 0 auto;
-    max-width: inherit;
-    margin: -120px -40px 0;
+    width: 320px;
+    margin: -100px -20px 0;
+    height: auto;
   }
 
   .catalog__wrapper {
@@ -225,6 +226,10 @@
     background-color: white;
     border: 1px solid $grey;
     padding: 0 38px 40px;
+  }
+
+  .catalog__item-img {
+    margin: -100px -40px 0;
   }
 
   .catalog__wrapper {

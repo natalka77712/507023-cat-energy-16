@@ -10,3 +10,8 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    padding-left: 15px;
+  }
+}
