@@ -1,0 +1,32 @@
+.social__icon {
+  fill: $grey-brownish;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link {
+  padding: 7px 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .social__icon--vk {
+    height: 17px;
+    width: 30px;
+  }
+
+  .social__icon--insta {
+    height: 23px;
+    width: 23px;
+  }
+
+  .social__icon--fb {
+    width: 14px;
+    height: 28px;
+  }
+}
