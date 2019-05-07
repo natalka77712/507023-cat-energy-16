@@ -1,0 +1,15 @@
+.social__icon {
+  fill: $grey-brownish;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link {
+  padding: 7px 15px;
+}
