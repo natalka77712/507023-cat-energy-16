@@ -6,7 +6,6 @@
   border: none;
   padding: 0;
   margin: 0;
-  position: relative;
 
   &--cat {
     padding-top: 38px;
@@ -24,7 +23,7 @@
 
   &--owner {
     margin-top: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
   }
 
   &--comment {
@@ -38,42 +37,7 @@
 }
 
 .form__block-title {
-  display: inline-block;
-  vertical-align: baseline;
-  position: relative;
-  padding-right: 22px;
-  padding-left: 40px;
-  margin-left: -40px;
-  margin-bottom: 33px;
-  background: white;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 100vw;
-    height: 3px;
-    margin-top: 2px;
-    background: $green;
-    z-index: -1;
-  }
-}
-
-.form__block-title::before {
-  right: 0;
-}
-
-.form__block-title::after {
-  left: 20px;
-}
-
-.form__block-title--width {
-  margin-right: 70px;
-
-  &::after {
-    top: 30%;
-  }
+  margin-bottom: 31px;
 }
 
 .form__text-wrapper {
@@ -173,7 +137,7 @@
 }
 
 .form__textarea {
-  padding: 12px 5px 5px;
+  padding: 10px 7px 7px;
   width: 100%;
   min-height: 150px;
   border: 1px solid $grey-silver;
@@ -189,8 +153,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 3px;
-    left: 0;
+    top: 1px;
+    left: 4px;
     width: 30px;
     height: 30px;
     border: 1px solid $grey-pinkish;
@@ -220,7 +184,8 @@
 }
 
 .form__btn-submit {
-  margin: 24px 0;
+  margin-top: 22px;
+  margin-bottom: 24px;
 }
 
 .form__legend {
@@ -232,7 +197,7 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    padding: 0 39px 72px;
+    padding: 0 39px 82px;
   }
 
   .form__text-wrapper {
@@ -314,6 +279,10 @@
     &::after {
       left: 15px;
     }
+  }
+
+  .form__text-label {
+    margin-right: 15px;
   }
 
   .form__text-input {
