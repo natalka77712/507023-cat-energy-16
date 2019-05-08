@@ -88,13 +88,13 @@
 
 @media (min-width: $tablet-width) {
   .additional-ingredient {
-    padding-top: 43px;
+    padding-top: 38px;
     padding-bottom: 76px;
   }
 
   .additional-ingredient__title {
     padding-left: 30px;
-    margin-bottom: 82px;
+    margin-bottom: 76px;
     font-size: 36px;
     line-height: 1;
   }
@@ -163,10 +163,11 @@
 
   .additional-ingredient {
     padding-top: 40px;
-    padding-bottom: 86px;
+    padding-bottom: 84px;
   }
 
   .additional-ingredient__title {
+    margin-bottom: 82px;
     padding-left: 0;
   }
 
