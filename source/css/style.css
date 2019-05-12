@@ -682,6 +682,10 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .form__block--owner {
@@ -738,10 +742,6 @@ img {
   color: #444444;
   border: 1px solid #cdcdcd;
   outline: none; }
-  .form__text-input--email {
-    width: 75%; }
-  .form__text-input--phone {
-    width: 69%; }
   .form__text-input:hover {
     border-color: #bababa; }
   .form__text-input:active {
@@ -853,7 +853,7 @@ img {
 
 @media (min-width: 768px) {
   .form {
-    padding: 0 39px 82px; }
+    padding: 0 39px 72px; }
   .form__text-wrapper {
     padding-bottom: 20px; }
   .form__radio-label {
@@ -886,7 +886,8 @@ img {
     .form__block-title::after {
       left: -60px; }
     .form__block-title--width {
-      margin-right: 0; }
+      margin-right: 0;
+      top: 55%; }
     .form__block-title--extra {
       margin-bottom: 57px; }
     .form__block-title--addition {
@@ -917,6 +918,8 @@ img {
     margin-right: 15px; }
   .form__text-input {
     padding-left: 18px; }
+  .form__icon {
+    right: 15px; }
   .form__checkbox-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -924,6 +927,8 @@ img {
     padding-bottom: 32px; }
   .form__checkbox-item:nth-child(2n) {
     padding-left: 25px; }
+  .form__checkbox:checked + label::after {
+    bottom: 18px; }
   .form__wrapper-submit {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -949,22 +954,22 @@ img {
 
 @media (min-width: 1300px) {
   .form {
-    padding-left: 0;
-    padding-right: 0; }
+    padding: 0 0 81px; }
   .form__text-label {
     margin-right: 15px; }
     .form__text-label--phone {
       margin-right: 8px; }
+  .form__icon {
+    right: 22px;
+    top: 39%; }
   .form__radio-label {
-    padding-top: 25px; }
+    padding-top: 23px; }
     .form__radio-label::before {
       top: 13px;
       left: 26px; }
   .form__radio:checked + label::after {
     top: 25px;
     left: 37px; }
-  .form__block-title::after {
-    left: -30px; }
   .form__block-wrapper,
   .form__owner-wrapper {
     display: -webkit-box;
@@ -994,7 +999,7 @@ img {
   .form__block--owner {
     margin: 50px 0; }
   .form__block--comment {
-    padding-bottom: 62px; }
+    padding-bottom: 65px; }
   .form__block-title--comment {
     margin-bottom: 72px; }
   .form__block--cat {
@@ -1003,6 +1008,11 @@ img {
     margin-bottom: 75px; }
     .form__block-title--addition {
       margin-bottom: 55px; }
+    .form__block-title--comment {
+      margin-bottom: 72px; }
+    .form__block-title::after {
+      left: -30px;
+      top: 55%; }
   .form__checkbox-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 25%;
@@ -1020,7 +1030,7 @@ img {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 568px;
             flex: 0 0 568px;
-    margin-top: 62px; }
+    margin-top: 59px; }
   .form__legend {
     padding: 0 100px; } }
 
@@ -1456,7 +1466,7 @@ img {
         -ms-flex-align: center;
             align-items: center; }
   .page-footer__wrapper {
-    padding-top: 30px;
+    padding-top: 32px;
     padding-bottom: 40px; }
   .contacts__city {
     margin-top: 20px;
@@ -1479,7 +1489,7 @@ img {
     .page-footer__wrapper--catalog {
       padding-top: 40px; }
   .page-footer__social {
-    padding-left: 28px; }
+    padding-left: 41px; }
   .page-footer__copyright {
     padding-top: 15px; } }
 
@@ -1513,7 +1523,7 @@ img {
     padding: 10px 0 65px; }
   .page-main__title {
     padding-top: 65px;
-    padding-bottom: 50px; }
+    padding-bottom: 42px; }
   --form {
     padding-bottom: 40px; } }
 
@@ -1808,6 +1818,7 @@ img {
     z-index: 1;
     margin-top: -30px;
     padding-top: 0;
+    padding-bottom: 12px;
     border-top: 1px solid #d9d9d9;
     background: linear-gradient(to bottom, white 619px, #f2f2f2 619px); }
     .promo::after {
@@ -1817,7 +1828,7 @@ img {
       left: 0;
       right: 0;
       bottom: 0;
-      height: 485px;
+      height: 465px;
       background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f2f2f2), color-stop(50%, #eaeaea));
       background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%); }
   .promo__stats-box {

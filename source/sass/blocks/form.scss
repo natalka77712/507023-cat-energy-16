@@ -18,6 +18,7 @@
     border-bottom: 1px solid $grey-silver;
     border-top: 1px solid $grey-silver;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 
@@ -82,14 +83,6 @@
   color: $grey-dark;
   border: 1px solid $grey-pinkish;
   outline: none;
-
-  &--email {
-    width: 75%;
-  }
-
-  &--phone {
-    width: 69%;
-  }
 
   &:hover {
     border-color: $grey-fog;
@@ -229,7 +222,7 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    padding: 0 39px 82px;
+    padding: 0 39px 72px;
   }
 
   .form__text-wrapper {
@@ -284,6 +277,7 @@
 
     &--width {
       margin-right: 0;
+      top: 55%;
     }
 
     &--extra {
@@ -329,6 +323,10 @@
     padding-left: 18px;
   }
 
+  .form__icon {
+    right: 15px;
+  }
+
   .form__checkbox-item {
     flex: 0 0 50%;
     padding-bottom: 32px;
@@ -336,6 +334,10 @@
 
   .form__checkbox-item:nth-child(2n) {
     padding-left: 25px;
+  }
+
+  .form__checkbox:checked + label::after {
+    bottom: 18px;
   }
 
   .form__wrapper-submit {
@@ -360,8 +362,7 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 0 81px;
   }
 
   .form__text-label {
@@ -372,8 +373,13 @@
     }
   }
 
+  .form__icon {
+    right: 22px;
+    top: 39%;
+  }
+
   .form__radio-label {
-    padding-top: 25px;
+    padding-top: 23px;
 
     &::before {
       top: 13px;
@@ -384,10 +390,6 @@
   .form__radio:checked + label::after {
     top: 25px;
     left: 37px;
-  }
-
-  .form__block-title::after {
-    left: -30px;
   }
 
   .form__block-wrapper,
@@ -415,7 +417,7 @@
   }
 
   .form__block--comment {
-    padding-bottom: 62px;
+    padding-bottom: 65px;
   }
 
   .form__block-title--comment {
@@ -431,6 +433,15 @@
 
     &--addition {
       margin-bottom: 55px;
+    }
+
+    &--comment {
+      margin-bottom: 72px;
+    }
+
+    &::after {
+      left: -30px;
+      top: 55%;
     }
   }
 
@@ -455,7 +466,7 @@
 
   .form__btn-submit {
     flex: 0 0 568px;
-    margin-top: 62px;
+    margin-top: 59px;
   }
 
   .form__legend {
