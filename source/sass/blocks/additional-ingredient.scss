@@ -16,13 +16,26 @@
 }
 
 .additional-ingredient__title {
-  margin: 0;
-  margin-bottom: 32px;
+  position: relative;
+  margin: 0 20px 32px -20px;
+  padding: 0 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
   color: $color-base-text;
+  background-color: white;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: -20px;
+    top: 50%;
+    width: 100vw;
+    height: 3px;
+    background-color: $green;
+    z-index: -1;
+  }
 }
 
 .additional-ingredient__list {
@@ -94,9 +107,13 @@
 
   .additional-ingredient__title {
     padding-left: 30px;
-    margin-bottom: 76px;
+    margin: 0 300px 76px 0;
     font-size: 36px;
     line-height: 1;
+
+    &::after {
+      left: -40px;
+    }
   }
 
   .additional-ingredient__item {
@@ -162,13 +179,17 @@
   }
 
   .additional-ingredient {
-    padding-top: 40px;
-    padding-bottom: 84px;
+    padding-top: 50px;
+    padding-bottom: 85px;
   }
 
   .additional-ingredient__title {
-    margin-bottom: 82px;
+    margin: 0 850px 77px 0;
     padding-left: 0;
+
+    &::after {
+      left: -60px;
+    }
   }
 
   .additional-ingredient__list {

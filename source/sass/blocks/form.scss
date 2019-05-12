@@ -37,7 +37,30 @@
 }
 
 .form__block-title {
+  position: relative;
   margin-bottom: 31px;
+  margin-left: -20px;
+  padding: 0 20px;
+  background-color: white;
+
+  &--width {
+    margin-right: 80px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: -20px;
+    top: 50%;
+    width: 100vw;
+    height: 3px;
+    background-color: $green;
+    z-index: -1;
+  }
+
+  &--width::after {
+    top: 30%;
+  }
 }
 
 .form__text-wrapper {
@@ -60,6 +83,14 @@
   border: 1px solid $grey-pinkish;
   outline: none;
 
+  &--email {
+    width: 75%;
+  }
+
+  &--phone {
+    width: 69%;
+  }
+
   &:hover {
     border-color: $grey-fog;
   }
@@ -76,8 +107,9 @@
 
 .form__icon {
   position: absolute;
-  top: 30%;
-  right: 15px;
+  top: 40%;
+  right: 30px;
+  transform: translateY(-50%);
 
   &:active {
     fill: $green;
@@ -246,6 +278,14 @@
   .form__block-title {
     margin-bottom: 70px;
 
+    &::after {
+      left: -60px;
+    }
+
+    &--width {
+      margin-right: 0;
+    }
+
     &--extra {
       margin-bottom: 57px;
     }
@@ -344,6 +384,10 @@
   .form__radio:checked + label::after {
     top: 25px;
     left: 37px;
+  }
+
+  .form__block-title::after {
+    left: -30px;
   }
 
   .form__block-wrapper,
