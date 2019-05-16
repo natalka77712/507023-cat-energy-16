@@ -243,35 +243,43 @@
 @media (min-width: $desktop-width) {
   .promo {
     border-top: 0;
-    padding-top: 0;
-    padding-bottom: 30px;
-    background: linear-gradient(to bottom, white 219px, $grey 219px);
+    padding: 0;
+    background: linear-gradient(to bottom, white 132px, $grey 132px);
 
     &::after {
-      height: 485px;
-      background: linear-gradient(to right, $grey 72%, $grey-cloud 72%);
+      background: none;
     }
   }
 
-  .promo__container {
+  .promo__case {
     display: flex;
-    flex-wrap: wrap;
+
+    &::before,
+    &::after {
+      content: "";
+      flex: 1 0 0;
+    }
+  }
+
+  .promo__case::after {
+    background-color: $grey-cloud;
   }
 
   .promo__wrapper {
-    display: flex;
-    flex-direction: column;
-    max-width: 470px;
+    flex: 0 0 1220px;
+    position: relative;
+    padding: 0 760px 64px 0;
   }
 
   .promo__title {
+    max-width: 50%;
     margin-top: 47px;
-    margin-bottom: 38px;
+    margin-bottom: 72px;
   }
 
   .promo__example {
-    margin-top: 106px;
-    margin-bottom: 69px;
+    padding-top: 73px;
+    margin-bottom: 68px;
     padding-right: 0;
   }
 
@@ -290,7 +298,7 @@
   .promo__costs {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 40px;
+    padding-top: 38px;
     margin: 0;
     max-width: 355px;
     text-align: left;
@@ -306,10 +314,29 @@
 
   .promo__slider {
     margin-left: auto;
+    padding-bottom: 62px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .promo__backdrop {
+    position: absolute;
+    bottom: 0;
+    right: -40px;
+    width: 325px;
+    height: 71%;
+    background-color: $grey-cloud;
+    z-index: -2;
   }
 
   .promo__range {
     margin-left: 120px;
-    padding: 28px 0 30px;
+    padding: 30px 0 0;
+  }
+
+  .promo__range-toggle {
+    left: 46%;
+    width: 32px;
   }
 }

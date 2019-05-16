@@ -52,11 +52,12 @@
 
 @media (min-width: $desktop-width) {
   .slider-item--before {
-    left: 43px;
-    width: 375px;
+    left: 40px;
+    width: 388px;
   }
 
   .slider-item--after {
-    left: 390px;
+    left: 400px;
+    width: 330px;
   }
 }
