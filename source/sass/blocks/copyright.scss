@@ -12,6 +12,12 @@
 
 @media (min-width: $tablet-width) {
   .copyright__link {
-    padding-left: 15px;
+    padding-left: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    padding-left: 22px;
   }
 }

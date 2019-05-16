@@ -55,9 +55,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100vw;
-  max-width: 100%;
-  min-width: 320px;
+  width: 100%;
   border: none;
 }
 
@@ -99,28 +97,24 @@
   .contacts {
     position: absolute;
     top: 100px;
-    left: 70px;
-    padding: 62px 55px 55px 70px;
+    left: 110px;
+    padding: 53px 55px 55px 65px;
     z-index: 2;
     max-width: 570px;
     background-color: white;
 
-    &--index {
-      padding-top: 55px;
-      left: 47px;
-    }
-
     &--catalog {
-      padding: 52px 47px 55px 80px;
-      left: 35px;
+      padding: 52px 75px 55px 50px;
     }
+  }
+
+  .contacts__adress {
+    padding: 8px;
+    max-width: 200px;
+    text-align: left;
   }
 
   .contacts__map {
     height: 400px;
-  }
-
-  .contacts__adress {
-    text-align: left;
   }
 }

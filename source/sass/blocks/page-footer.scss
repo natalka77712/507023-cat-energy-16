@@ -62,7 +62,7 @@
   }
 
   .page-footer__wrapper {
-    padding-top: 35px;
+    padding-top: 32px;
     padding-bottom: 40px;
   }
 
@@ -81,8 +81,7 @@
   }
 
   .page-footer__copyright {
-    padding-top: 7px;
-    display: block;
+    padding-top: 20px;
     align-self: baseline;
   }
 }
@@ -96,7 +95,15 @@
     padding-top: 42px;
 
     &--catalog {
-      padding-top: 42px;
+      padding-top: 40px;
     }
+  }
+
+  .page-footer__social {
+    padding-left: 41px;
+  }
+
+  .page-footer__copyright {
+    padding-top: 15px;
   }
 }

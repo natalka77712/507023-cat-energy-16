@@ -149,11 +149,11 @@
   }
 
   .advantages__item {
-    flex: 0 0 20%;
-    margin-right: 80px;
+    flex: 0 0 21%;
+    margin-right: 60px;
 
     &:last-child {
-      margin-right: 0;
+      margin-right: -10px;
     }
   }
 
