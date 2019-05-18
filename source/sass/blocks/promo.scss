@@ -318,6 +318,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    min-height: auto;
   }
 
   .promo__backdrop {
@@ -325,18 +326,20 @@
     bottom: 0;
     right: -40px;
     width: 325px;
-    height: 71%;
+    height: 100%;
     background-color: $grey-cloud;
     z-index: -2;
   }
 
   .promo__range {
+    margin-right: 0;
     margin-left: 120px;
     padding: 30px 0 0;
   }
 
   .promo__range-toggle {
-    left: 46%;
+    left: 47%;
+    top: -10px;
     width: 32px;
   }
 }

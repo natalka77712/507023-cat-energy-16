@@ -51,13 +51,23 @@
 }
 
 @media (min-width: $desktop-width) {
-  .slider-item--before {
-    left: 40px;
-    width: 388px;
+  .slider {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
-  .slider-item--after {
-    left: 400px;
-    width: 330px;
+  .slider-item {
+    top: -190px;
+
+    &--before {
+      left: 40px;
+      width: 390px;
+    }
+
+    &--after {
+      left: 405px;
+      width: 330px;
+    }
   }
 }
