@@ -1,8 +1,5 @@
 .programs__list {
   @include reset-list;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .programs__item {
@@ -10,7 +7,7 @@
   padding: 20px;
   margin-bottom: 18px;
   background-color: $grey;
-  flex: 0 0 100%;
+  width: 100%;
 
   &::before,
   &::after {
@@ -98,7 +95,6 @@
 
 @media (min-width: $tablet-width) {
   .programs__item {
-    width: 100%;
     padding: 65px 55px 55px 50px;
     margin-bottom: 30px;
 
@@ -165,12 +161,15 @@
 
 @media (min-width: $desktop-width) {
   .programs__list {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .programs__item {
-    flex: 0 0 44%;
+    flex: 0 0 570px;
+    max-width: 570px;
     padding: 80px 48px 33px 55px;
     margin-right: 40px;
 

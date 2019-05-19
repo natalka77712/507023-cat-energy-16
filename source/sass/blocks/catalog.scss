@@ -133,7 +133,8 @@
     margin-top: 110px;
     margin-bottom: 30px;
     padding: 39px;
-    width: calc(50% - 30px);
+    flex: 0 0 324px;
+    max-width: 324px;
     background-color: $grey;
 
     &::after {
@@ -219,7 +220,8 @@
 @media (min-width: $desktop-width) {
   .catalog__item {
     padding-bottom: 37px;
-    width: calc((100% - 80px*3) / 4);
+    flex: 0 0 245px;
+    max-width: 245px;
 
     &--more {
       background-color: white;
