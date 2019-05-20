@@ -82,16 +82,16 @@
       <h2 class="advantages__title title-section">Как это работает</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
-          <p class="advantages__desc advantages__desc--leaf">Функциональное питание содержит только полезные питательные вещества.</p>
+          <div class="advantages__desc advantages__desc--leaf">Функциональное питание содержит только полезные питательные вещества.</div>
         </li>
         <li class="advantages__item">
-          <p class="advantages__desc advantages__desc--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          <div class="advantages__desc advantages__desc--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</div>
         </li>
         <li class="advantages__item">
-          <p class="advantages__desc advantages__desc--dining">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
+          <div class="advantages__desc advantages__desc--dining">Замените один-два приема обычной еды на наше фунцкциональное питание.</div>
         </li>
         <li class="advantages__item">
-          <p class="advantages__desc advantages__desc--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
+          <div class="advantages__desc advantages__desc--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</div>
         </li>
       </ul>
     </section>
@@ -146,7 +146,7 @@
         <div class="promo__range">
           <button class="promo__range-btn" type="button">Было</button>
         <div class="promo__range-control">
-          <div class="promo__range-toggle"></div>
+          <button class="promo__range-toggle" aria-label="Кнопка переключения слайдера"></button>
         </div>
           <button class="promo__range-btn" type="button">Стало</button>
         </div>
@@ -158,20 +158,20 @@
 
   <footer class="page-footer">
     <section class="page-footer__contacts page-footer__contacts--main-page">
-        <div class="contacts contacts--index container">
+      <div class="contacts contacts--index container">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8<span class="contacts__city">Санкт-Петербург</span></p>
         </div>
       </div>
-      <div class="contacts__map" aria-label="Расположение организации Cat Energy на карте">
-        <picture class="contacts__wrap">
+      <div class="page-footer__map">
+        <picture class="page-footer__wrap">
           <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-          <img class="contacts__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+          <img class="page-footer__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
         </picture>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1553350954270" width="320" height="362" style="border:0;" allowfullscreen=""></iframe>
       </div>
@@ -181,7 +181,7 @@
         <a class="page-footer__logo">
           <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
         </a>
-        <ul class="page-footer__social">
+        <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vk" href="#" aria-label="vkontakte">
               <svg class="social__icon social__icon--vk" width="22" height="12">
@@ -204,13 +204,13 @@
             </a>
           </li>
         </ul>
-        <p class="page-footer__copyright copyright">HTML Academy
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+          <span class="copyright__academy">
             <svg class="copyright__logo-icon" width="27" height="34">
               <use xlink:href="#icon-htmlacademy"></use>
             </svg>
-          </a>
-        </p>
+          </span>
+        </a>
       </div>
     </div>
   </footer>

@@ -6,6 +6,30 @@
   background-color: white;
 }
 
+.page-footer__map {
+  position: relative;
+}
+
+.page-footer__wrap {
+  display: block;
+  height: 365px;
+  text-align: center;
+}
+
+.page-footer__img {
+  height: 365px;
+}
+
+.page-footer__map iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: none;
+}
+
 .page-footer__wrapper {
   padding-top: 37px;
   padding-bottom: 40px;
@@ -48,6 +72,8 @@
   padding-top: 22px;
   font-size: 16px;
   line-height: 16px;
+  color: $grey-dark;
+  text-decoration: none;
 
   &:active {
     opacity: 0.3;
@@ -71,6 +97,11 @@
     display: block;
   }
 
+  .page-footer__map,
+  .page-footer__map iframe {
+    height: 400px;
+  }
+
   .page-footer__logo {
     padding-bottom: 0;
   }
@@ -89,6 +120,10 @@
 @media (min-width: $desktop-width) {
   .page-footer__contacts {
     position: relative;
+  }
+
+  .page-footer__map {
+    height: 400px;
   }
 
   .page-footer__wrapper {

@@ -3,12 +3,13 @@
   text-align: center;
   background:
     url("../img/index-background-mobile@1x.jpg") no-repeat,
-    linear-gradient(to bottom, $light-green  305px, white 305px);
+    linear-gradient(to bottom, $light-green 305px, white 305px);
   background-position: center top;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
-    background-size: 320px auto;
+    background-image: url("../img/index-background-mobile@2x.jpg"),
+      linear-gradient(to bottom, $light-green 305px, white 305px);
+    background-size: 320px auto, auto;
   }
 }
 
@@ -41,7 +42,7 @@
 @media (min-width: $tablet-width) {
   .main-block {
     position: relative;
-    min-height: 860px;
+    min-height: 858px;
     text-align: left;
     background: none;
   }
@@ -52,7 +53,7 @@
 
   .main-block__title {
     padding-top: 50px;
-    margin-bottom: 41px;
+    margin-bottom: 37px;
     width: 460px;
     font-size: 60px;
     line-height: 1;
@@ -85,9 +86,9 @@
 
 @media (min-width: $desktop-width) {
   .main-block {
-    margin-bottom: 85px;
-    margin-top: -136px;
-    min-height: 699px;
+    margin-bottom: 80px;
+    margin-top: -126px;
+    min-height: 696px;
     text-align: left;
     background:
       url("../img/index-background-desktop@1x.jpg") no-repeat,
@@ -96,7 +97,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
-      background-size: cover;
+      background-size: 696px auto, auto;
     }
   }
 
@@ -105,7 +106,7 @@
   }
 
   .main-block__title {
-    padding-top: 235px;
+    padding-top: 227px;
     margin-bottom: 37px;
   }
 

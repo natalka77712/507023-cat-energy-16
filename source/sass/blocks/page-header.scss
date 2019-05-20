@@ -4,11 +4,11 @@
   padding-bottom: 11px;
   max-width: 230px;
 
-  &:hover {
+  &[href]:hover {
     opacity: 0.8;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.6;
   }
 }
@@ -33,10 +33,6 @@
     align-items: center;
   }
 
-  .page-header--catalog {
-    padding-top: 19px;
-  }
-
   .page-header__logo-link {
     padding-top: 6px;
     max-width: 174px;
@@ -53,11 +49,7 @@
   .page-header {
     position: relative;
     z-index: 1;
-    padding-top: 15px;
-
-    &--catalog {
-      padding-top: 12px;
-    }
+    padding-top: 30px;
   }
 
   .page-header__logo-link {

@@ -35,30 +35,6 @@
   display: block;
 }
 
-.contacts__map {
-  position: relative;
-}
-
-.contacts__wrap {
-  display: block;
-  height: 365px;
-  text-align: center;
-}
-
-.contacts__img {
-  height: 365px;
-}
-
-.contacts__map iframe {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  border: none;
-}
-
 @media (min-width: $tablet-width) {
   .contacts {
     padding: 62px 60px 55px 56px;
@@ -86,11 +62,6 @@
     display: block;
     margin-top: 20px;
   }
-
-  .contacts__map,
-  .contacts__map iframe {
-    height: 400px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -112,9 +83,5 @@
     padding: 8px;
     max-width: 200px;
     text-align: left;
-  }
-
-  .contacts__map {
-    height: 400px;
   }
 }

@@ -16,7 +16,6 @@
 
 .advantages__desc {
   position: relative;
-  margin: 0;
   padding: 13px 0 13px 80px;
 
   &::before {
@@ -37,7 +36,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-leaf@2x.png");
-      background-size: 26px auto;
+      background-size: 50px auto;
     }
   }
 
@@ -46,7 +45,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-powder@2x.png");
-      background-size: 30px auto;
+      background-size: 50px auto;
     }
   }
 
@@ -55,7 +54,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-dining@2x.png");
-      background-size: 23px auto;
+      background-size: 50px auto;
     }
   }
 
@@ -64,7 +63,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-clock@2x.png");
-      background-size: 26px auto;
+      background-size: 50px auto;
     }
   }
 }
@@ -95,7 +94,7 @@
   }
 
   .advantages__desc {
-    padding: 115px 5px 132px 0;
+    padding: 117px 5px 132px 0;
     max-width: 265px;
     font-size: 16px;
     line-height: 24px;

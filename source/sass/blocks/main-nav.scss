@@ -68,12 +68,21 @@
   .main-nav--no-js .main-nav__toggle {
     display: none;
   }
+
+  .main-nav--no-js .main-nav__list {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
     max-width: 470px;
     margin-left: auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+    visibility: hidden;
   }
 
   .main-nav__list {
@@ -95,6 +104,7 @@
     padding: 21px 0;
     font-size: 18px;
     line-height: 25px;
+    font-weight: 400;
     border-top: none;
 
     &--active {

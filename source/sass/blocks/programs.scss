@@ -63,6 +63,8 @@
 
 .programs__link {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1;
@@ -75,20 +77,18 @@
   }
 
   &::after {
-    position: absolute;
     content: "";
-    top: 4px;
-    right: -33px;
+    position: absolute;
+    margin-left: 12px;
     width: 25px;
     height: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
-    transition: 0.3s;
   }
 
   &:hover::after {
-    right: -45px;
     width: 34px;
+    height: 12px;
     background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 }
@@ -114,7 +114,7 @@
 
     &--weight-gain {
       padding-top: 71px;
-      margin-bottom: 45px;
+      margin-bottom: 48px;
     }
 
     &--weight-gain::after {
@@ -134,7 +134,7 @@
 
   .programs__description {
     margin-bottom: 27px;
-    padding-bottom: 31px;
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
@@ -151,10 +151,10 @@
 
   .programs__link {
     font-size: 20px;
+    line-height: 20px;
 
     &::after {
-      top: 5px;
-      right: -42px;
+      margin-left: 20px;
     }
   }
 }
@@ -220,5 +220,9 @@
   .programs__link {
     font-size: 20px;
     line-height: 1;
+
+    &::after {
+      margin-left: 14px;
+    }
   }
 }

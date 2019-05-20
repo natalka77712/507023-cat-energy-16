@@ -1,6 +1,8 @@
 .promo {
   padding-top: 20px;
   padding-bottom: 35px;
+  overflow-x: hidden;
+  overflow-y: hidden;
   background-color: $grey;
 }
 
@@ -86,6 +88,7 @@
   height: 6px;
   background-color: $green;
   border-radius: 3px;
+  border: none;
 }
 
 .promo__range-btn {
@@ -107,7 +110,7 @@
     z-index: 1;
     margin-top: -30px;
     padding-top: 0;
-    padding-bottom: 12px;
+    padding-bottom: 7px;
     border-top: 1px solid $grey-light;
     background: linear-gradient(to bottom, white 619px, $grey 619px);
 
@@ -214,7 +217,12 @@
       border-radius: 50%;
     }
 
-    &:hover {
+    &:focus {
+      outline: none;
+    }
+
+    &:hover,
+    &:focus {
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
 
@@ -230,12 +238,17 @@
     border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
     z-index: 2;
 
+    &:focus {
+      outline: none;
+    }
+
+    &:focus,
     &:hover {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+      border-bottom: 1px solid rgba(17, 17, 17, 0.4);
     }
 
     &:active {
-      border-bottom: transparent;
+      border-bottom-color: transparent;
     }
   }
 }
@@ -244,7 +257,7 @@
   .promo {
     border-top: 0;
     padding: 0;
-    background: linear-gradient(to bottom, white 132px, $grey 132px);
+    background: linear-gradient(to bottom, white 180px, $grey 180px);
 
     &::after {
       background: none;
@@ -268,7 +281,8 @@
   .promo__wrapper {
     flex: 0 0 1220px;
     position: relative;
-    padding: 0 760px 64px 0;
+    padding: 0 760px 70px 0;
+    max-width: 1220px;
   }
 
   .promo__title {
