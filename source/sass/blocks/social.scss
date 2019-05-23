@@ -3,12 +3,14 @@
   text-decoration: none;
   fill: $grey-brownish;
 
-  &:hover {
+  &:hover .social__icon {
     fill: $green;
+    outline: none;
   }
 
-  &:active {
+  &:active .social__icon {
     opacity: 0.3;
+    outline: none;
   }
 }
 

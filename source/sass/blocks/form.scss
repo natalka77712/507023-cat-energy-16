@@ -97,6 +97,7 @@
 
   &:hover {
     border-color: $grey-fog;
+    box-shadow: inset 0 0 0 1px $grey-fog;
   }
 
   &:active {
@@ -107,7 +108,16 @@
 
   &--invalid {
     border-color: $red;
+    box-shadow: inset 0 0 0 1px $red;
   }
+}
+
+.form__text-input:active ~ .form__icon {
+  fill: $green;
+}
+
+.form__text-input--invalid ~ .form__icon {
+  fill: $red;
 }
 
 .form__icon {
@@ -119,18 +129,6 @@
 
   &:hover {
     fill: $grey-shadow;
-  }
-
-  &:focus {
-    outline: none;
-  }
-
-  &:active {
-    fill: $green;
-  }
-
-  &--invalid {
-    fill: $red;
   }
 
   &--email {
