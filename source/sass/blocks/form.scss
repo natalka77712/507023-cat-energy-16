@@ -51,7 +51,7 @@
 .form__block-title {
   display: inline-block;
   vertical-align: middle;
-  margin: -15px 10px 31px -40px;
+  margin: -15px 10px 35px -40px;
   padding-left: 40px;
   padding-right: 20px;
   background-color: white;
@@ -105,8 +105,8 @@
     outline: none;
   }
 
-  &:invalid {
-    border: 2px solid $red;
+  &--invalid {
+    border-color: $red;
   }
 }
 
@@ -115,12 +115,21 @@
   top: 40%;
   right: 15px;
   transform: translateY(-50%);
+  fill: $grey-shadow;
+
+  &:hover {
+    fill: $grey-shadow;
+  }
+
+  &:focus {
+    outline: none;
+  }
 
   &:active {
     fill: $green;
   }
 
-  &:invalid {
+  &--invalid {
     fill: $red;
   }
 
@@ -132,6 +141,12 @@
   &--phone {
     width: 20px;
     height: 20px;
+  }
+}
+
+.form__radio {
+  &:focus + .form__radio-label {
+    outline: none;
   }
 }
 
@@ -161,6 +176,7 @@
     opacity: 0.3;
   }
 }
+
 
 .form__radio:checked + label::after {
   content: "";
@@ -231,7 +247,7 @@
   }
 
   .form__text-wrapper {
-    padding-bottom: 17px;
+    padding-bottom: 19px;
   }
 
   .form__radio-label {
@@ -361,12 +377,12 @@
     flex: 0 0 45%;
     padding: 17px 27px;
     margin-bottom: 0;
-    margin-top: 23px;
+    margin-top: 20px;
     font-size: 20px;
   }
 
   .form__legend {
-    padding: 0 65px;
+    padding-left: 65px;
     font-size: 16px;
   }
 }
@@ -377,7 +393,7 @@
   }
 
   .form__text-label {
-    margin-right: 10px;
+    margin-right: 20px;
 
     &--phone {
       margin-right: 8px;
@@ -394,13 +410,13 @@
 
     &::before {
       top: 13px;
-      left: 23px;
+      left: 29px;
     }
   }
 
   .form__radio:checked + label::after {
-    top: 25px;
-    left: 35px;
+    top: 24px;
+    left: 40px;
   }
 
   .form__block-wrapper,
@@ -413,10 +429,13 @@
   }
 
   .form__block-wrapper,
-  .form__block-inner,
-  .form__wrapper-submit {
+  .form__block-inner {
     padding-left: 17px;
     padding-right: 21px;
+  }
+
+  .form__wrapper-submit {
+    padding-left: 22px;
   }
 
   .form__block--cat,
@@ -443,10 +462,10 @@
   }
 
   .form__block-title {
-    margin: -20px 10px 70px -40px;
+    margin: -20px 10px 74px -40px;
 
     &--addition {
-      margin-bottom: 55px;
+      margin-bottom: 50px;
     }
 
     &--comment {
@@ -465,12 +484,16 @@
     margin-right: 5px;
   }
 
+  .form__checkbox-label {
+    padding-left: 60px;
+  }
+
   .form__btn-submit {
     flex: 0 0 568px;
     margin-top: 59px;
   }
 
   .form__legend {
-    padding: 0 100px;
+    padding-left: 87px;
   }
 }

@@ -1,4 +1,6 @@
-.social__icon {
+.social__link {
+  padding: 7px 15px;
+  text-decoration: none;
   fill: $grey-brownish;
 
   &:hover {
@@ -8,10 +10,6 @@
   &:active {
     opacity: 0.3;
   }
-}
-
-.social__link {
-  padding: 7px 15px;
 }
 
 @media (min-width: $tablet-width) {
