@@ -1,13 +1,14 @@
 .copyright__logo-icon {
   fill: $grey-brownish;
 
-  &:hover {
-    fill: $green;
-  }
-
   &:active {
     opacity: 0.3;
   }
+}
+
+.page-footer__copyright:hover .copyright__logo-icon,
+.page-footer__copyright:focus .copyright__logo-icon {
+  fill: $green;
 }
 
 @media (min-width: $tablet-width) {

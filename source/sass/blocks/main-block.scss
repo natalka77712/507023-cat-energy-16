@@ -13,7 +13,6 @@
   }
 }
 
-
 .main-block__title {
   margin: 0 0 24px;
   padding-top: 26px;
@@ -86,8 +85,7 @@
 
 @media (min-width: $desktop-width) {
   .main-block {
-    margin-bottom: 80px;
-    margin-top: -126px;
+    margin: -126px 0 80px 0;
     min-height: 696px;
     text-align: left;
     background:
@@ -96,7 +94,8 @@
     background-position: right top;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-image: url("../img/index-background-desktop@2x.jpg"),
+        linear-gradient(to right, white 50%, $light-green 50%);
       background-size: 720px auto, auto;
     }
   }

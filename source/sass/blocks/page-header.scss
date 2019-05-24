@@ -18,6 +18,13 @@
   height: 39px;
 }
 
+@media (max-width: $tablet-width - 1) {
+  .page-header--catalog,
+  .page-header--form {
+    border-bottom: 1px solid $grey-silver;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header__container {
     padding-top: 16px;
