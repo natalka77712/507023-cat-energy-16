@@ -94,6 +94,7 @@
     background-position: right top;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      margin: -126px -76px 80px;
       background-image: url("../img/index-background-desktop@2x.jpg"),
         linear-gradient(to right, white 50%, $light-green 50%);
       background-size: 720px auto, auto;

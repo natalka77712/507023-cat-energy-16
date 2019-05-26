@@ -163,10 +163,10 @@
   &:hover::before {
     border: 1px solid $grey-fog;
   }
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.form__radio:focus + .form__radio-label {
+  opacity: 0.3;
 }
 
 .form__radio:checked + label::after {
@@ -201,10 +201,6 @@
   &:hover::before {
     border: 1px solid $grey-fog;
   }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .form__checkbox:checked + label::after {
@@ -217,6 +213,10 @@
   border-left: 1px solid $green;
   border-bottom: 1px solid $green;
   transform: rotate(-45deg);
+}
+
+.form__checkbox:focus + .form__checkbox-label {
+  opacity: 0.3;
 }
 
 .form__btn-submit {
