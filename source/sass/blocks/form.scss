@@ -142,12 +142,6 @@
   }
 }
 
-.form__radio {
-  &:focus + .form__radio-label {
-    outline: none;
-  }
-}
-
 .form__radio-label {
   position: relative;
   padding: 12px 0 12px 66px;

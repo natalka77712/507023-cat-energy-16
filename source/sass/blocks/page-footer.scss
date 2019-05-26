@@ -80,6 +80,11 @@
   }
 }
 
+.page-footer__copyright:hover .copyright__logo-icon,
+.page-footer__copyright:focus .copyright__logo-icon {
+  fill: $green;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__container {
     display: flex;

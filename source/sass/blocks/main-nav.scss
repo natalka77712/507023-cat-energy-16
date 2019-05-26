@@ -15,14 +15,10 @@
   .main-nav--no-js & {
     display: none;
   }
-
-  .main-nav--closed & {
-    display: block;
-  }
 }
 
 .main-nav__list {
-  display: block;
+  display: none;
   padding: 0;
   margin: 0 -20px;
   list-style: none;
@@ -72,10 +68,6 @@
 
   .main-nav--no-js .main-nav__list {
     display: block;
-  }
-
-  .main-nav--closed .main-nav__list {
-    display: none;
   }
 }
 

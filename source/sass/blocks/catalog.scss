@@ -233,6 +233,10 @@
       border: 1px solid $grey;
       padding: 0 38px 40px;
     }
+
+    &::after {
+      left: 38%;
+    }
   }
 
   .catalog__item-img {
