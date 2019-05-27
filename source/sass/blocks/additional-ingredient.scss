@@ -182,7 +182,7 @@
   }
 
   .additional-ingredient__title {
-    padding-left: 0;
+    margin: -24px -40px 80px;
   }
 
   .additional-ingredient__list {
@@ -213,6 +213,7 @@
   }
 
   .additional-ingredient__volume {
+    padding-left: 5px;
     width: 210px;
   }
 

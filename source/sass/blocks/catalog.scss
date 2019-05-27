@@ -224,7 +224,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog__item {
-    padding-bottom: 38px;
+    padding-bottom: 39px;
     margin-bottom: 28px;
     flex: 0 0 245px;
     max-width: 245px;
@@ -238,6 +238,10 @@
     &::after {
       left: 38%;
     }
+  }
+
+  .catalog__title {
+    margin-top: 39px;
   }
 
   .catalog__item-img {
