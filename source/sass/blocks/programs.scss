@@ -18,6 +18,7 @@
   }
 
   &::before {
+    top: 23px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -27,7 +28,7 @@
   &--losing-weight::after {
     width: 35px;
     height: 49px;
-    top: 20px;
+    top: 22px;
     margin-left: 8px;
     background-image: url("../img/icon-cat-slim.svg");
   }
@@ -35,7 +36,7 @@
   &--weight-gain::after {
     width: 67px;
     height: 28px;
-    top: 20px;
+    top: 22px;
     margin-top: 13px;
     margin-left: -12px;
     background-image: url("../img/icon-cat-pro.svg");
@@ -43,7 +44,7 @@
 }
 
 .programs__title {
-  margin: 0 0 30px;
+  margin: 0 0 29px;
   padding-left: 70px;
   padding-top: 10px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -93,12 +94,12 @@
 
 @media (min-width: $tablet-width) {
   .programs__item {
-    padding: 65px 55px 55px 50px;
-    margin-bottom: 30px;
+    padding: 62px 55px 55px 50px;
+    margin-bottom: 36px;
 
     &::before {
-      top: 93px;
-      right: 65px;
+      top: 90px;
+      right: 59px;
       width: 200px;
       height: 200px;
     }
@@ -111,7 +112,7 @@
     }
 
     &--weight-gain {
-      padding-top: 71px;
+      padding-top: 65px;
       margin-bottom: 48px;
     }
 
@@ -132,7 +133,7 @@
 
   .programs__description {
     margin-bottom: 27px;
-    padding-bottom: 30px;
+    padding-bottom: 29px;
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
@@ -168,7 +169,7 @@
   .programs__item {
     flex: 0 0 570px;
     max-width: 570px;
-    padding: 80px 48px 33px 55px;
+    padding: 76px 48px 33px 55px;
     margin-right: 40px;
 
     &:last-child {
@@ -185,8 +186,8 @@
     }
 
     &--losing-weight::after {
-      top: 45px;
-      left: 54px;
+      top: 42px;
+      left: 56px;
       width: 71px;
       height: 97px;
     }
@@ -206,11 +207,11 @@
   .programs__title {
     padding-left: 155px;
     padding-top: 0;
-    margin-bottom: 70px;
+    margin-bottom: 77px;
   }
 
   .programs__description {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
     padding-bottom: 11px;
     padding-right: 0;
   }
@@ -220,7 +221,7 @@
     line-height: 1;
 
     &::after {
-      margin-left: 14px;
+      margin-left: 19px;
     }
   }
 }

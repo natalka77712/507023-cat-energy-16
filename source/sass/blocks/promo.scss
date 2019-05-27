@@ -64,7 +64,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 34px;
+  padding-top: 32px;
   max-width: 200px;
 }
 
@@ -121,7 +121,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      height: 465px;
+      height: 463px;
       background: linear-gradient(to right, $grey 50%, $grey-cloud 50%);
     }
   }
@@ -147,12 +147,12 @@
   }
 
   .promo__title {
-    margin-top: 49px;
-    margin-bottom: 58px;
+    margin-top: 47px;
+    margin-bottom: 59px;
   }
 
   .promo__example {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -258,7 +258,7 @@
   .promo {
     border-top: 0;
     padding-bottom: 0;
-    padding-top: 20px;
+    padding-top: 17px;
     margin-top: -50px;
     background: linear-gradient(to bottom, white 198px, $grey 198px);
 
@@ -284,19 +284,19 @@
   .promo__wrapper {
     flex: 0 0 1220px;
     position: relative;
-    padding: 0 760px 70px 0;
+    padding: 0 788px 72px 0;
     max-width: 1220px;
   }
 
   .promo__title {
     max-width: 50%;
     margin-top: 47px;
-    margin-bottom: 72px;
+    margin-bottom: 76px;
   }
 
   .promo__example {
-    padding-top: 71px;
-    margin-bottom: 66px;
+    padding-top: 70px;
+    margin-bottom: 69px;
     padding-right: 0;
   }
 
@@ -305,7 +305,7 @@
   }
 
   .promo__stats-value {
-    margin-bottom: 13px;
+    margin-bottom: 11px;
   }
 
   .promo__stats-option {
@@ -322,7 +322,7 @@
   }
 
   .promo__mark {
-    margin-right: 50px;
+    margin-right: 63px;
   }
 
   .promo__price {
@@ -357,7 +357,7 @@
 
   .promo__range-toggle {
     left: 47%;
-    top: -10px;
+    top: -13px;
     width: 32px;
   }
 }

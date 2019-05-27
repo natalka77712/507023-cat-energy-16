@@ -172,7 +172,7 @@
 
   .catalog__title {
     max-width: 160px;
-    margin: 36px auto 10px;
+    margin: 36px auto 11px;
     padding: 1px;
     font-size: 20px;
 
@@ -224,7 +224,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog__item {
-    padding-bottom: 37px;
+    padding-bottom: 38px;
+    margin-bottom: 28px;
     flex: 0 0 245px;
     max-width: 245px;
 
@@ -248,7 +249,7 @@
   }
 
   .catalog__info {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
     width: inherit;
   }
 

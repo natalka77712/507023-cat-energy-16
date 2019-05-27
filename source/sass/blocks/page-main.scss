@@ -9,11 +9,15 @@
   font-family: "Oswald", "Arial", sans-serif;
   color: $color-base-text;
   text-transform: uppercase;
+
+  &--form {
+    max-width: 250px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-main__title {
-    padding: 50px 0;
+    padding: 49px 0;
     text-align: left;
 
     &--form {
@@ -24,6 +28,7 @@
   .page-main__description {
     padding-left: 40px;
     width: 380px;
+    max-width: 450px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -31,7 +36,7 @@
 
 @media (min-width: $desktop-width) {
   .page-main__description {
-    padding: 10px 0 65px;
+    padding: 10px 0 64px;
   }
 
   .page-main__title {

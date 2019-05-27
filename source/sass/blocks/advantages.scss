@@ -74,7 +74,7 @@
   }
 
   .advantages__title {
-    margin-bottom: 64px;
+    margin-bottom: 66px;
   }
 
   .advantages__list {
@@ -108,7 +108,7 @@
 
     &::after {
       position: absolute;
-      top: -20px;
+      top: -34px;
       left: 107px;
       font-size: 281px;
       line-height: 1;
@@ -120,7 +120,7 @@
 
     &--leaf::after {
       content: "1";
-      left: 100px;
+      left: 120px;
     }
 
     &--powder::after {
@@ -133,6 +133,7 @@
 
     &--clock::after {
       content: "4";
+      left: 118px;
     }
   }
 }
@@ -157,6 +158,19 @@
   }
 
   .advantages__desc {
+    padding-top: 112px;
     padding-bottom: 112px;
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      top: -35px;
+    }
+
+    &--leaf::after {
+      left: 115px;
+    }
   }
 }

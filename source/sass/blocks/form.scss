@@ -24,7 +24,7 @@
 
   &--owner {
     margin-top: 42px;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
   }
 
   &--comment {
@@ -75,7 +75,7 @@
 
 .form__text-label {
   max-width: 40%;
-  margin-right: 12px;
+  margin-right: 13px;
   flex-shrink: 0;
 }
 
@@ -86,6 +86,7 @@
 
 .form__text-input {
   padding: 12px;
+  padding-left: 15px;
 }
 
 .form__textarea,
@@ -234,11 +235,11 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    padding-bottom: 69px;
+    padding-bottom: 72px;
   }
 
   .form__text-wrapper {
-    padding-bottom: 19px;
+    padding-bottom: 16px;
   }
 
   .form__radio-label {
@@ -267,7 +268,7 @@
   }
 
   .form__block--cat {
-    padding-top: 62px;
+    padding-top: 63px;
     padding-bottom: 55px;
   }
 
@@ -288,6 +289,7 @@
   }
 
   .form__block-title {
+    padding-right: 40px;
     margin-bottom: 70px;
     margin-top: -20px;
 
@@ -338,7 +340,7 @@
   }
 
   .form__text-label {
-    margin-right: 12px;
+    margin-right: 18px;
   }
 
   .form__text-input {
@@ -380,15 +382,19 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    padding: 0 0 81px;
+    padding: 0 0 76px;
   }
 
   .form__text-label {
-    margin-right: 17px;
+    margin-right: 24px;
 
     &--phone {
-      margin-right: 8px;
+      margin-right: 14px;
     }
+  }
+
+  .form__text-input {
+    padding-top: 11px;
   }
 
   .form__icon {
@@ -400,7 +406,7 @@
     padding-top: 23px;
 
     &::before {
-      top: 10px;
+      top: 12px;
       left: 25px;
     }
   }
@@ -433,7 +439,7 @@
   .form__block--programm,
   .form__text-wrapper {
     flex: 0 0 570px;
-    padding-bottom: 18px;
+    padding-bottom: 17px;
   }
 
   .form__block--programm {
@@ -441,7 +447,7 @@
   }
 
   .form__block--owner {
-    margin: 72px 0;
+    margin: 70px 0;
   }
 
   .form__block--comment {
@@ -453,10 +459,10 @@
   }
 
   .form__block-title {
-    margin: -20px 10px 74px -40px;
+    margin: -20px 10px 72px -40px;
 
     &--addition {
-      margin-bottom: 50px;
+      margin-bottom: 52px;
     }
 
     &--comment {
@@ -472,7 +478,6 @@
   .form__checkbox-item {
     flex: 0 0 20%;
     padding-bottom: 0;
-    margin-right: 5px;
   }
 
   .form__checkbox-label {
@@ -482,9 +487,10 @@
   .form__btn-submit {
     flex: 0 0 568px;
     margin-top: 59px;
+    padding: 19px 27px;
   }
 
   .form__legend {
-    padding-left: 78px;
+    padding-left: 80px;
   }
 }
